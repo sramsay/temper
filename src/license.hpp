@@ -5,7 +5,7 @@
 #include <string>
 
 const auto PROGRAM{"temper"};
-const auto VERSION{"1.0.0"};
+const auto VERSION{"1.0.2"};
 const auto DATES{"2019-2020"};
 
 std::string printVersion();
