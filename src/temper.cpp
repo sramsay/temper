@@ -9,11 +9,18 @@
 
 #include "temper.hpp"
 
-#include <boost/lexical_cast/try_lexical_convert.hpp>
-#include <boost/program_options.hpp>
+#include <stdlib.h>
+#include <exception>
+#include <string>
 #include <iomanip>
 #include <iostream>
-#include <sstream>
+
+#include <boost/program_options.hpp>
+
+#include <boost/type_index/type_index_facade.hpp>
+
+#include <boost/lexical_cast/try_lexical_convert.hpp>
+#include <boost/lexical_cast/bad_lexical_cast.hpp>
 
 #include "license.hpp"
 
