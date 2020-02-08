@@ -36,7 +36,7 @@ You need a C++ compiler that understands C++-17.  You also need to have `meson`,
 
 From the `temper` directory, type:
 
-	$ meson build
+	$ meson build --buildtype=release
 	$ cd build
 	$ ninja
 	$ ninja install
