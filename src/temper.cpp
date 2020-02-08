@@ -98,7 +98,10 @@ int main(int argc, char *argv[]) {
            << "\u00B0C" << endl;
       cout << fixed << setprecision(1) << rawtemp << "\u00B0C is " << fixed
            << setprecision(1) << ftemp << "\u00B0F" << endl;
-    }
+    } else {
+			cout << desc << endl;
+			exit(0);
+		}
   } catch (exception &e) {
     cerr << "Error: " << e.what() << endl;
     exitStatus = 1;
