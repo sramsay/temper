@@ -1,7 +1,6 @@
 #include "license.hpp"
 
 #include <sstream>
-#include <string>
 
 using std::endl;
 using std::string;

@@ -1,7 +1,7 @@
 temper
 ==========
 
-Version 1.0.3
+Version 1.0.4
 
 ## Frequently Unasked Questions
 
