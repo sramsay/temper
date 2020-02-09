@@ -1,26 +1,43 @@
-/* temper.cpp
+/*
+ * temper.cpp
  *
- * Shows Fahrenheit to Celcius conversions.
+ * temper - a blazingly minimalistic Fahrenheit to Celcius converter
  *
- * Written and maintained by Stephen Ramsay
+ * Main and associated functions
  *
- * Last Modified: Tue Dec 31 06:46:20 CST 2019
+ * Written and maintained by Stephen Ramsay <sramsay@protonmail.com>
+ *
+ * Last Modified: Sun Feb 09 07:12:52 CST 2020
+ *
+ * Copyright © 2019-2020 Stephen Ramsay
+ *
+ * temper is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3, or (at your option) any
+ * later version.
+ *
+ * temper is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with temper; see the file COPYING.  If not see
+ * <http://www.gnu.org/licenses/>.
  */
 
 #include "temper.hpp"
 
 #include <stdlib.h>
+
+#include <boost/lexical_cast/bad_lexical_cast.hpp>
+#include <boost/lexical_cast/try_lexical_convert.hpp>
+#include <boost/program_options.hpp>
+#include <boost/type_index/type_index_facade.hpp>
 #include <exception>
-#include <string>
 #include <iomanip>
 #include <iostream>
-
-#include <boost/program_options.hpp>
-
-#include <boost/type_index/type_index_facade.hpp>
-
-#include <boost/lexical_cast/try_lexical_convert.hpp>
-#include <boost/lexical_cast/bad_lexical_cast.hpp>
+#include <string>
 
 #include "license.hpp"
 
@@ -49,7 +66,7 @@ namespace bpo = boost::program_options;
 namespace bc = boost::conversion;
 
 int main(int argc, char *argv[]) {
-	auto exitStatus{0};
+  auto exitStatus{0};
   try {
     bpo::options_description desc("temper [num]");
     desc.add_options()("help,h", "Print this message")(
@@ -75,12 +92,12 @@ int main(int argc, char *argv[]) {
 
     if (vm.count("version") != 0) {
       cout << printVersion();
-			exit(0);
+      exit(0);
     }
 
     if (vm.count("help") != 0) {
       cout << desc << endl;
-			exit(0);
+      exit(0);
     }
 
     if (vm.count("input-value") != 0) {
@@ -99,15 +116,15 @@ int main(int argc, char *argv[]) {
       cout << fixed << setprecision(1) << rawtemp << "\u00B0C is " << fixed
            << setprecision(1) << ftemp << "\u00B0F" << endl;
     } else {
-			cout << desc << endl;
-			exit(0);
-		}
+      cout << desc << endl;
+      exit(0);
+    }
   } catch (exception &e) {
     cerr << "Error: " << e.what() << endl;
     exitStatus = 1;
   }
 
-	return exitStatus;
+  return exitStatus;
 }
 
 vector<bpo::option> ignore_numbers(vector<string> &argv) {
