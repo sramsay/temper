@@ -28,7 +28,7 @@
 
 #include "temper.hpp"
 
-#include <stdlib.h>
+#include <cstdlib>
 
 #include <boost/lexical_cast/bad_lexical_cast.hpp>
 #include <boost/lexical_cast/try_lexical_convert.hpp>
