@@ -45,11 +45,13 @@ You might need to be root for that last part.
 
 ### So let me get this straight.  You wrote over a hundred lines of code in C++ &mdash; with friggin' Boost as a dependency &mdash; to do something this stupid?
 
-Yes.  Aside from the pressing need for such a thing, I also wanted to play around with [meson](https://mesonbuild.com/) and [ninja](https://ninja-build.org/).  I'm thinking of using those on larger projects, and wanted to get my head around them on a tiny project first.  They're both awesome, by the way.
+Yes.  Aside from the pressing need for such a thing, I also wanted to play around with [meson](https://mesonbuild.com/) and [ninja](https://ninja-build.org/).  At the time, I was thinking of using those on larger projects, and wanted to get my head around them on a tiny project first.  They're both awesome, by the way.
 
 Every discussion of `boost` on the internet seems to begin with, "Well, if you're okay using boost . . ."  
 
 I am.  When `temper` becomes a mission-critical piece of software on the International Space Station, I will rewrite the whole thing in ANSI C.  On earth, however, `boost` is everywhere, and it makes life easier most of the time.
+
+Oh, and temper proved very useful when building [wwo](https://github.com/sramsay/wwo), which is a much more interesting and useful program.
 
 ### Couldn't you have written this in, like, one line of Ruby/Python/JavaScript with no dependencies?
 
