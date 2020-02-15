@@ -1,31 +1,3 @@
-/*
- * temper.cpp
- *
- * temper - a blazingly minimalistic Fahrenheit to Celcius converter
- *
- * Main and associated functions
- *
- * Written and maintained by Stephen Ramsay <sramsay@protonmail.com>
- *
- * Last Modified: Sun Feb 09 07:12:52 CST 2020
- *
- * Copyright © 2019-2020 Stephen Ramsay
- *
- * temper is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 3, or (at your option) any
- * later version.
- *
- * temper is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
- * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
- * for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with temper; see the file COPYING.  If not see
- * <http://www.gnu.org/licenses/>.
- */
-
 #include "temper.hpp"
 
 #include <cstdlib>
@@ -40,17 +12,6 @@
 #include <string>
 
 #include "license.hpp"
-
-/*
-// A Debug macro in case of emergency
-#ifdef DEBUG_BUILD
-#define DEBUG(x) std::cerr << x << std::endl
-#else
-#define DEBUG(x)
-  do {
-  } while (0)
-#endif
-*/
 
 using std::cerr;
 using std::cout;
