@@ -30,7 +30,7 @@ As an American, I am completely illiterate when it comes to the metric system.  
 
 ### What do I need to compile this program?
 
-You need a C++ compiler that understands C++-17.  You also need to have `meson`, `ninja`, and `boost` installed (all three of which are almost certainly available through the package manager of whatever distribution you're using).
+You need a reasonably modern C++ compiler.  You also need to have `meson`, `ninja`, and `boost` installed (all three of which are almost certainly available through the package manager of whatever distribution you're using; the last one is probaby alfready installed).
 
 ### How do I compile this program?
 
@@ -78,3 +78,5 @@ I don't know.  Maybe version 2.
 ### You sound like a jerk.  Are you some kind of imperial-system zealot or something like that?
 
 Nah, I think the metric system is way more rational, and it's the system used by most people the world over.  I wish we (Americans, Libyans, Belizeans, and Myanmars) would switch.  There's perhaps some hope for those last three, but the first seem curiously intractable on this point.
+
+Last Modified: Sat Feb 15 22:20:17 CST 2020
