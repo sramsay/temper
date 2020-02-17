@@ -8,16 +8,16 @@ group: travis_latest
 os: linux
 language: python
 
+matrix:
+  include:
+    - env: CC=clang
+
 install:
 	- pip install meson ninja
 
-matrix:
-  include:
-    - env: CC=gcc
-    - env: CC=clang
 
 script:
-  - meson builddir
-  - ninja -C builddir
+  - meson build
+  - ninja -C build
 
 
