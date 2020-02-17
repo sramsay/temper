@@ -1,22 +1,25 @@
 
-languge: cpp
+os:
+  - linux
+  - osx
 
-dist: eoan
-sudo: required
-group: travis_latest
+language:
+  - cpp
 
-os: linux
-language: python
+services:
+  - docker
 
-matrix:
-  include:
-    - env: CC=clang
-
-install:
-	- pip install meson ninja
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python3 ninja; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip3 install meson; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker pull YOUR/REPO:eoan; fi
 
 script:
-  - meson build
-  - ninja -C build
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo FROM YOUR/REPO:eoan > Dockerfile; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo ADD . /root >> Dockerfile; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -t withgit .; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker run withgit /bin/sh -c "cd /root && TRAVIS=true CC=$CC CXX=$CXX meson build"; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then SDKROOT=$(xcodebuild -version -sdk macosx Path) meson build; fi
 
 
