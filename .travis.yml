@@ -1,5 +1,5 @@
 dist: eoan
-group: travis_latest
+group: edge
 
 os: linux
 language: python
