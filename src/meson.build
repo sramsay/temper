@@ -1,2 +1,2 @@
-sources = files('temper.cpp', 'license.cpp')
+sources = files('temper.cpp')
 headers = files('temper.hpp', 'license.hpp')
