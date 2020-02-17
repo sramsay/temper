@@ -3,5 +3,5 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [v1.1.0](https://github.com/sramsay/json/releases/tag/v1.1.0)
 
-- Added some tandard C++ optimizations
+- Added various C++ optimizations
 
