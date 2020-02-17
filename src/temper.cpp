@@ -62,9 +62,9 @@ int main(int argc, char *argv[]) {
     }
 
     if (vm.count("input-value") != 0) {
-      const auto c1{32};
-      const auto c2{5.0};
-      const auto c3{9.0};
+      constexpr auto c1{32};
+      constexpr auto c2{5.0};
+      constexpr auto c3{9.0};
 
       stringstream input;
       input << vm["input-value"].as<string>();
