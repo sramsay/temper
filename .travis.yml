@@ -1,7 +1,7 @@
 
 languge: cpp
 
-dist: bionic
+dist: eoan
 sudo: required
 group: travis_latest
 
