@@ -13,10 +13,10 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python3 ninja; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip3 install meson; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker pull YOUR/REPO:eoan; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker pull sramsay/temper:eoan; fi
 
 script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo FROM YOUR/REPO:eoan > Dockerfile; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo FROM sramsay/temper:eoan > Dockerfile; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo ADD . /root >> Dockerfile; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -t withgit .; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker run withgit /bin/sh -c "cd /root && TRAVIS=true CC=$CC CXX=$CXX meson build"; fi
