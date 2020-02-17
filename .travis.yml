@@ -2,6 +2,7 @@
 languge: cpp
 
 dist: bionic
+sudo: required
 group: travis_latest
 
 os: linux
