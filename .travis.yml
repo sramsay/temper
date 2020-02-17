@@ -13,7 +13,7 @@ matrix:
     - env: CC=clang
 
 install:
-  - pip3.6 install meson ninja
+  - pip install meson ninja
 
 script:
   - meson builddir
