@@ -16,9 +16,9 @@ First, check to make sure that your issue isn't [already addressed](https://gith
 
 Try to describe your issue as clearly as possible.
 
-- If it is a bug, please describe how to **reproduce** it. If possible, attach a complete example which demonstrates the error. Please also state what you **expected** to happen instead of the error.
+  - If it is a bug, please describe how to **reproduce** it. If possible, attach a complete example which demonstrates the error. Please also state what you **expected** to happen instead of the error.
 - If you propose a change or addition, try to give an **example** how the improved code miight look or how to use it.
-- If you found a compilation error, please tell us which **compiler** (version and operating system) you used and paste the (relevant part of) the error messages to the ticket.
+  - If you found a compilation error, please tell us which **compiler** (version and operating system) you used and paste the (relevant part of) the error messages to the ticket.
 
 ## Processes
 
