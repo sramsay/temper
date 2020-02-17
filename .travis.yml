@@ -6,6 +6,10 @@ sudo: required
 group: travis_latest
 
 os: linux
+language: python
+
+install:
+	- pip install meson ninja
 
 matrix:
   include:
