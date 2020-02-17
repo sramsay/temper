@@ -2,11 +2,12 @@ project('temper', 'cpp',
 	version : '1.1.0',
 	license : 'GPL3',
 	meson_version : '>= 0.52',
-	default_options : ['warning_level=3', 'buildtype=release'])
+	default_options : ['warning_level=3', 'buildtype=debug'])
 
 subdir('src')
 
 boost = dependency('boost', modules : ['system', 'program_options', 'filesystem'])
+
 
 executable('temper', sources, install : true, dependencies : [boost])
 
