@@ -1,14 +1,15 @@
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 temper
-==========
+======
 
 Version 1.1.0
 
-## Frequently Unasked Questions
+Frequently Unasked Questions
+============================
 
-### Is this the program I'm looking for?
+Is this the program I'm looking for?
+------------------------------------
 
 Probably not.
 
