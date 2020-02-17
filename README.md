@@ -84,4 +84,4 @@ I don't know.  Maybe version 2.
 
 Nah, I think the metric system is way more rational, and it's the system used by most people the world over.  I wish we (Americans, Libyans, Belizeans, and Myanmars) would switch.  There's perhaps some hope for those last three, but the first seem curiously intractable on this point.
 
-Last Modified: Mon Feb 17 11:48:28 CST 2020
+Last Modified: Mon Feb 17 15:25:04 CST 2020
