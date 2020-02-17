@@ -1,7 +1,11 @@
 
 # How to contribute
 
-Despite its simplicity, this project nonetheless strives to adhere to good coding standards and to be as efficient and fault tolerant as possible, and to be generally portable across UNIX-like platforms.  All contributions to that end will be warmly welcomed.
+To be honest, this is mostly a way for me to test out various kinds of tooling -- continuous integration systems, build tools, compiler chains, and that kind of thing.
+
+Nonetheless, it is a real program that I actually do use and maintain.
+
+Despite its simplicity, this project strives to adhere to good coding standards, to be as efficient and fault tolerant as possible, and to be generally portable across UNIX-like platforms.  All contributions to that end will be warmly welcomed.
 
 I have toyed with the idea of adding a variety of different temperature conversions to the program, but still haven't worked out an interface that works while preserving the essential simplicity of the program.  If you have ideas about this, I'd love to hear them.
 

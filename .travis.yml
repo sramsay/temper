@@ -12,9 +12,6 @@ matrix:
     - env: CC=gcc
     - env: CC=clang
 
-install:
-  - pip install meson ninja
-
 script:
   - meson builddir
   - ninja -C builddir
