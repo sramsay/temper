@@ -6,7 +6,6 @@ Version 1.1.0
 
 ## Frequently Unasked Questions
 
-
 ### Is this the program I'm looking for?
 
 Probably not.
