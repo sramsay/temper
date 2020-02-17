@@ -5,15 +5,15 @@ temper
 
 Version 1.1.0
 
-Frequently Unasked Questions
-============================
+#Frequently Unasked Questions
+
 
 Is this the program I'm looking for?
 ------------------------------------
 
 Probably not.
 
-### What does this program do?
+# What does this program do?
 
 It's a command-line program for UNIX-like systems that converts from Fahrenheit to Celsius and vice versa.  So if you type:
 
