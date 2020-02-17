@@ -1,4 +1,3 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/82e866fd61854aee8a7c25798ae98bdc)](https://www.codacy.com/manual/sramsay/temper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sramsay/temper&amp;utm_campaign=Badge_Grade)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # temper
