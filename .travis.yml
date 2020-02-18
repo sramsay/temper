@@ -6,17 +6,17 @@ language: python
 
 matrix:
   include:
-    - env: CC=g++-9
-			compiler: g++
-			addons:
-				apt:
-					update: true
-          sources:
-            - sourceline: 'ppa:mhier/libboost-latest'
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-9
-            - boost1.72
+		env: CC=g++-9
+		compiler: g++
+		addons:
+			apt:
+				update: true
+				sources:
+					- sourceline: 'ppa:mhier/libboost-latest'
+					- ubuntu-toolchain-r-test
+				packages:
+					- g++-9
+					- boost1.72
 
 install:
   - pip install meson ninja
