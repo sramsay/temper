@@ -5,13 +5,13 @@
 #include <iosfwd>
 
 constexpr auto PROGRAM{"temper"};
-constexpr auto VERSION{"1.1.0"};
+constexpr auto VERSION{"1.1.1"};
 constexpr auto DATES{"2019-2020"};
 
 std::string printVersion();
 
 inline std::string printVersion() {
-	std::stringstream ss;
+  std::stringstream ss;
 
   ss << PROGRAM << " " << VERSION << "\n";
   ss << "Copyright © " << DATES << " by Stephen Ramsay"
@@ -30,4 +30,3 @@ inline std::string printVersion() {
 }
 
 #endif
-
