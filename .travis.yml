@@ -26,7 +26,7 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
-            - boost1.72
+            - boost1.70
 
 install:
   - pip install meson ninja
