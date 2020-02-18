@@ -22,7 +22,7 @@ inline std::string printVersion() {
      << "\n";
   ss << "under the terms of the GNU General Public License version 3"
      << "\n";
-  ss << "or (at your option) any later version.  See COPYING for details,"
+  ss << "or (at your option) any later version.  See LICENSE for details,"
      << "\n";
   ss << "or visit <https://www.gnu.org/licenses/gpl.txt>." << std::endl;
 
