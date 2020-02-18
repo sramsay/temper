@@ -1,5 +1,5 @@
 dist: eoan
-group: edge
+group: trusty
 
 os: linux
 language: python
