@@ -15,17 +15,6 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-9
-            - boost1.72
-    - env: COMPILER=g++-9
-      compiler: gcc
-      addons:
-        apt:
-          update: true
-          sources:
-            - sourceline: 'ppa:mhier/libboost-latest'
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-9
             - boost1.70
 
 install:
