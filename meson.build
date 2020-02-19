@@ -22,7 +22,7 @@ configure_file(input : '.clang-tidy',
 							 copy: true)
 
 run_target('tidy',
-	command : ['clang-tidy', '-p', '.', sources, '--', '-march=native',  '-I/usr/local/include', '-L/usr/local/lib', '-L/usr/local/opt/llvm/lib', '-Wl,-rpath,/usr/local/opt/llvm/lib', '>', 'errors'])
+  command : ['clang-tidy', '-p', '.', sources, '--', '-march=native',  '-I/usr/local/include', '-L/usr/local/lib', '-L/usr/local/opt/llvm/lib', '-Wl,-rpath,/usr/local/opt/llvm/lib', '>', 'errors'])
 
 run_target('iwyu',
 	command : ['iwyu_tool.py', '-o', 'clang', '-j', '9', '-p', 'build', sources])
