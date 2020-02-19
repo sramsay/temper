@@ -1,25 +1,22 @@
-language: python
-dist: eoan
-sudo: false
-os: linux
+os:
+  - linux
+  - osx
 
-matrix:
-  include:
-    - env: COMPILER=g++-9 STANDARD=17
-      compiler: gcc
-      addons:
-        apt:
-          update: true
-          sources:
-            - sourceline: 'ppa:mhier/libboost-latest'
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-9
-            - boost1.70
+language:
+  - cpp
 
-install:
-  - pip install meson ninja
+services:
+  - docker
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install python3 ninja; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then pip3 install meson; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker pull sramsay/temper:eoan; fi
 
 script:
-  - meson build
-  - ninja -C build
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo FROM sramsay/temper:eoan > Dockerfile; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then echo ADD . /root >> Dockerfile; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker build -t withgit .; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then docker run withgit /bin/sh -c "cd /root && TRAVIS=true CC=$CC CXX=$CXX meson build && ninja -C build test"; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then SDKROOT=$(xcodebuild -version -sdk macosx Path) meson build && ninja -C build test; fi
