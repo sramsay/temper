@@ -15,6 +15,7 @@ matrix:
             - sourceline: 'ppa:mhier/libboost-latest'
             - ubuntu-toolchain-r-test
           packages:
+            - g++-9
             - boost1.70
 
 install:
