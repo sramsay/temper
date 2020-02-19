@@ -8,3 +8,5 @@ subdir('src')
 
 executable('temper-test', sources)
 
+run_target('check',
+  command : 'scripts/run_tests.sh')
