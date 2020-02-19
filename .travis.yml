@@ -12,10 +12,10 @@ matrix:
         apt:
           update: true
           sources:
-            - sourceline: 'ppa:mhier/libboost-latest'
+            - sourceline: 'ppa:boost-latest'
             - ubuntu-toolchain-r-test
           packages:
-            - libboost-latest
+            - boost-latest
 
 install:
   - pip install meson ninja
