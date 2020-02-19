@@ -1,4 +1,4 @@
-dist: eoan
+dist: bionic
 group: travis_latest
 
 os: linux
