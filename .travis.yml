@@ -8,6 +8,14 @@ matrix:
   include:
     - env: CXX=g++
     - env: CXX=clang++
+      addons:
+        apt:
+          update: true
+          sources:
+            - sourceline: 'ppa:mhier/libboost-latest'
+            - ubuntu-toolchain-r-test
+          packages:
+            - boost1.70
 
 install:
   - pip install meson ninja
