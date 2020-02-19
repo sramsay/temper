@@ -8,14 +8,16 @@ matrix:
   include:
     - env: CXX=g++
     - env: CXX=clang++
+      compiler: gcc
       addons:
         apt:
           update: true
           sources:
             - sourceline: 'ppa:mhier/libboost-latest'
+            - sourceline: 'ppa:jonathonf/gcc-9.1'
             - ubuntu-toolchain-r-test
           packages:
-            - g++-9
+            - g++-9.1
             - boost1.70
 
 install:
