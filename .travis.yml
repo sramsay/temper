@@ -14,11 +14,9 @@ matrix:
           update: true
           sources:
             - sourceline: 'ppa:mhier/libboost-latest'
-            - sourceline: 'ppa:jonathonf/gcc-9.1'
             - ubuntu-toolchain-r-test
           packages:
-            - g++-9.1
-            - boost1.70
+            - boost1.42
 
 install:
   - pip install meson ninja
