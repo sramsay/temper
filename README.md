@@ -1,6 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fafa33d720a84726838a83c60be1e183)](https://app.codacy.com/manual/sramsay/temper?utm_source=github.com&utm_medium=referral&utm_content=sramsay/temper&utm_campaign=Badge_Grade_Settings)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/sramsay/temper.svg)](http://isitmaintained.com/project/sramsay/temper "Percentage of issues still open")
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3715/badge)](https://bestpractices.coreinfrastructure.org/projects/3715)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 <!-- [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/sramsay/temper.svg)](http://isitmaintained.com/project/sramsay/temper "Average time to resolve an issue") -->
@@ -85,4 +84,8 @@ I don't know.  Maybe version 2.
 
 Nah, I think the metric system is way more rational, and it's the system used by most people the world over.  I wish we (Americans, Libyans, Belizeans, and Myanmars) would switch.  There's perhaps some hope for those last three, but the first seem curiously intractable on this point.
 
-Last Modified: Mon Feb 17 15:25:04 CST 2020
+### Info
+
+[Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
+
+Last Modified: Wed Feb 19 17:29:34 CST 2020
