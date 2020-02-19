@@ -5,7 +5,7 @@ os: linux
 
 matrix:
   include:
-    - env: COMPILER=g++-9
+    - env: COMPILER=g++-9 STANDARD=17
       compiler: gcc
       addons:
         apt:
