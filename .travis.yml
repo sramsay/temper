@@ -12,8 +12,6 @@ matrix:
         - clang
       addons:
         apt:
-          sources:
-            - ubuntu-toolchain-r-test
           update: true
           packages:
             - g++8
