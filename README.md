@@ -26,6 +26,18 @@ It will give you:
 	23.0°F is -5.0°C
 	23.0°C is 73.4°F
 
+You can also adjust the precision with the --precision switch, so that:
+
+  temper --precision=3 -320.4
+
+gives you:
+
+
+  -320.400°F is -195.778°C
+  -320.400°C is -544.720°F
+
+The default precision is 1.
+
 ### Doesn't [GNU units](https://www.gnu.org/software/units/) already do that?
 
 Yes.
