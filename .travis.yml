@@ -4,26 +4,25 @@ group: travis_latest
 os: linux
 language: python
 
+addons:
+  apt:
+  update: true
+  packages:
+  - libboost-all-dev
+
 matrix:
-  include:
-    - env:
-      compiler:
-        - gcc
-        - clang
-      addons:
-        apt:
-          update: true
-          packages:
-            - libboost-all-dev
+  - os: linux
+    compiler: gcc
+    env: COMPILER=g++
+
+  - os: linux
+    compiler: clang
+    env: COMPILER=clang++
 
 install:
   - pip install meson ninja
 
 script:
-  - export CXX=g++
-  - meson build
+  - CXX=$COMPILER meson --reconfigure build
   - ninja -v -C build
   - ninja -v -C build clean
-  - export CXX=clang++
-  - meson --reconfigure build
-  - ninja -v -C build
