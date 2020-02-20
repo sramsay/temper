@@ -12,7 +12,7 @@ matrix:
         apt:
           update: true
           packages:
-            - boost71
+            - libboost-program-options1.65.1
 
 install:
   - pip install meson ninja
