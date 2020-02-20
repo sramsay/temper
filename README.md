@@ -32,7 +32,6 @@ You can also adjust the precision with the --precision switch, so that:
 
 gives you:
 
-
 	-320.400°F is -195.778°C
 	-320.400°C is -544.720°F
 
