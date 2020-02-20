@@ -9,7 +9,8 @@ subdir('src')
 # One of these days I'll get coverage to work on MacOS
 #executable('temper-test', sources, cpp_args: ['-fprofile-arcs', '-ftest-coverage'])
 
-executable('temper-test', sources)
+e = executable('temper-test', sources)
+test('Unit tests', e)
 
 run_target('check',
   command : 'scripts/run_tests.sh')

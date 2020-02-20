@@ -22,10 +22,14 @@ matrix:
           update: true
           packages:
             - libboost-all-dev
+    - os: mac 
 
 install:
   - pip install meson ninja
+  - pip install --user cpp-coveralls
 
 script:
+  - CXX=${COMPILER} meson build
+  - ninja -v -C build
   - CXX=${COMPILER} meson build
   - ninja -v -C build

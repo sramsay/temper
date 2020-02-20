@@ -1,5 +1,7 @@
 #!/usr/bin/env bats
 
+run ninja -C ../build
+
 @test "positive input" {
   run ../build/temper 42
   [ "$status = 0" ]
