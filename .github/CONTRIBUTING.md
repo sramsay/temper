@@ -8,7 +8,7 @@ Despite its simplicity, this project strives to adhere to good coding standards,
 
 I have toyed with the idea of adding a variety of different temperature conversions to the program, but still haven't worked out an interface that works while preserving the essential simplicity of the program.  If you have ideas about this, I'd love to hear them.
 
-## Prerequisites
+## Bugs, Feature Requests, and Other Issues
 
 First, check to make sure that your issue isn't [already addressed](https://github.com/sramsay/temper/issues/) somewhere.  If you're reasonably confident that it isn't, [create an issue](https://github.com/sramsay/temper/issues/new/choose).  Please note that you need a [GitHub account](https://github.com/signup/free) in order to do this.
 
@@ -18,7 +18,7 @@ Try to describe your issue as clearly as possible.
 
     - If it is a bug, please describe how to **reproduce** it. If possible, attach a complete example which demonstrates the error. Please also state what you **expected** to happen instead of the error.
 
-    - If you propose a change or addition, try to give an **example** how the improved code miight look or how to use it.
+    - If you propose a change or addition, try to give an **example** how the improved code might look or how to use it.
 
     - If you found a compilation error, please tell us which **compiler** (version and operating system) you used and paste the (relevant part of) the error messages to the ticket.
 
@@ -35,10 +35,10 @@ The check target runs scripts/run-tests.sh, does something like the following:
   $ cd scripts
   $ bats temper_cli_tests
 
-I've encountered what appears to a bug that prevents this from being a ninja target in meson.  When that is resolved, I will probably get rid of the Makefile.  But the basic principle will stay the same.
+I've encountered what appears to a bug that prevents "check" from being a ninja target in meson.  When that is resolved, I will probably get rid of the Makefile.  But the basic principle will stay the same.
 
 ## Processes
 
-I generally test all code using the latest stable versions of clang and gcc, and do my best to keep up with the latest versions of all dependencies.  I also run clang_tidy using the .clang_tidy config in the root directory of the project (this file is automatically copied into the meson build directory on each new build) and run valgrind on the resulting binary with various options.  Code that produces issues with either static analyzer that cannot be satisfactorily resolved is very unlikely to be merged.
+I generally test all code using the latest stable versions of clang and gcc, and do my best to keep up with the latest versions of all dependencies.  I also run *clang_tidy* using the *.clang_tidy* config in the root directory of the project (this file is automatically copied into the meson build directory on each new build) and run valgrind on the resulting binary with various options.  Code that produces issues with either static analyzer that cannot be satisfactorily resolved is very unlikely to be merged.
 
-In other words, I am not particularly interested in code that is meant to run on old compilers or previous incarnations of the C++ standard.  If you are interested in doing this, you are welcome to fork the project.  I say this without the least bit of sarcasm.  In fact, if you do fork the project for these reasons, please let me know so I can link to it!
+I am not particularly interested in code that is meant to run on old compilers or previous incarnations of the C++ standard (though the project does use [travis-ci](https:://travis-ci.org) for continuous integration, and not all compilers tested are absolutely cutting edge).  If you are interested in getting temper to run with older toolchains or on more exotic platforms, you are welcome to fork the project.  I say this without the least bit of sarcasm.  In fact, if you do fork the project for these reasons, please let me know so I can link to it!

@@ -11,11 +11,8 @@ matrix:
       addons:
         apt:
           update: true
-          sources:
-            - sourceline: 'ppa:boost-latest'
-            - ubuntu-toolchain-r-test
           packages:
-            - boost-latest
+            - boost72
 
 install:
   - pip install meson ninja
