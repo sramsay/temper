@@ -3,7 +3,6 @@ extraction:
      prepare:
         packages: 
           - libboost-all-dev
-          - meson
      configure:
         command:
         - meson build
