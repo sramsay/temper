@@ -20,11 +20,10 @@ install:
   - pip install meson ninja
 
 script:
-  - CXX=clang++
-  - meson build
-  - ninja -v -C build
-  - ninja -v -C build
   - CXX=g++
   - meson build
   - ninja -v -C build
+  - ninja -v -C build clean
+  - CXX=clang++
+  - meson --reconfigure build
   - ninja -v -C build
