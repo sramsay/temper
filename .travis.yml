@@ -27,5 +27,5 @@ install:
   - pip install meson ninja
 
 script:
-  - export CXX=${COMPILER} meson --reconfigure build
+  - CXX=${COMPILER} meson --reconfigure build
   - ninja -v -C build
