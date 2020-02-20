@@ -14,8 +14,6 @@ matrix:
         apt:
           update: true
           packages:
-            - g++8
-            - clang-9
             - libboost-all-dev
 
 install:
@@ -26,7 +24,7 @@ script:
   - meson build
   - ninja -v -C build
   - ninja -v -C build
-  - CXX=g++-9
+  - CXX=g++
   - meson build
   - ninja -v -C build
   - ninja -v -C build
