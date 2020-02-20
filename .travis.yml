@@ -20,10 +20,10 @@ install:
   - pip install meson ninja
 
 script:
-  - export CXX=g++
+  - env: CXX=g++
   - meson build
   - ninja -v -C build
   - ninja -v -C build clean
-  - export CXX=clang++
+  - env: CXX=clang++
   - meson --reconfigure build
   - ninja -v -C build
