@@ -6,8 +6,10 @@ language: python
 
 matrix:
   include:
-    - env: CXX=g++
-      compiler: gcc
+    - env:
+      compiler:
+        - gcc
+        - clang
       addons:
         apt:
           update: true
