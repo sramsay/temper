@@ -12,14 +12,23 @@ matrix:
         - clang
       addons:
         apt:
+          sources:
+            - ubuntu-toolchain-r-test
           update: true
           packages:
+            - g++8
+            - clang-9
             - libboost-all-dev
 
 install:
   - pip install meson ninja
 
 script:
+  - CXX=clang++
+  - meson build
+  - ninja -C -v build
+  - ninja -C -v build
+  - CXX=g++-9
   - meson build
   - ninja -C -v build
   - ninja -C -v build
