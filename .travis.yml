@@ -26,9 +26,9 @@ install:
 script:
   - CXX=clang++
   - meson build
-  - ninja -C -v build
-  - ninja -C -v build
+  - ninja -v -C build
+  - ninja -v -C build
   - CXX=g++-9
   - meson build
-  - ninja -C -v build
-  - ninja -C -v build
+  - ninja -v -C build
+  - ninja -v -C build
