@@ -1,21 +1,27 @@
 #!/usr/bin/env bats
 
 @test "positive input" {
-  run temper 42
+  run ../../build/temper 42
   [ "$status = 0" ]
   [ "${lines[0]}" = "42.0°F is 5.6°C" ]
   [ "${lines[1]}" = "42.0°C is 107.6°F" ]
 }
 
 @test "negative input" {
-  run temper -42
+  run ../../build/temper -42
   [ "$status = 0" ]
   [ "${lines[0]}" = "-42.0°F is -41.1°C" ]
   [ "${lines[1]}" = "-42.0°C is -43.6°F" ]
 }
 
 @test "non-option text input" {
-  run temper jjjj
+  run ../../build/temper jjjj
   [ "$status = 0" ]
   [ "$output" = "Input must be a number." ]
+}
+
+@test "precision input" {
+  run ../../build/temper --precision=3 -320.4
+  [ "$status = 0" ]
+  [ "${lines[0]}" = "-320.400°F is -195.778°C" ]
 }

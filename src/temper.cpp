@@ -1,5 +1,3 @@
-#include "conversions.hpp"
-
 #include <boost/lexical_cast/bad_lexical_cast.hpp>
 #include <boost/lexical_cast/try_lexical_convert.hpp>
 #include <boost/program_options.hpp>
@@ -9,6 +7,7 @@
 #include <iostream>
 #include <string>
 
+#include "conversions.hpp"
 #include "license.hpp"
 
 using std::cerr;
@@ -27,7 +26,9 @@ int main(int argc, char *argv[]) {
   try {
     bpo::options_description desc("temper [num]");
     desc.add_options()("help", "Print this message")(
-        "version", "Print the version number");
+        "precision", bpo::value<int>()->default_value(1),
+        "Specify decimal precision of results")("version",
+                                                "Print the version number");
 
     bpo::options_description hidden("Hidden options");
     hidden.add_options()("input-value", bpo::value<double>(), "input value");
@@ -59,10 +60,14 @@ int main(int argc, char *argv[]) {
 
     if (vm.count("input-value") != 0) {
       const auto input{vm["input-value"].as<double>()};
-      auto c{cTemp(input)};
-      auto f{fTemp(input)};
-      cout << fixed << setprecision(1) << input << "\u00B0F is " << c << "\u00B0C" << endl;
-      cout << fixed << setprecision(1) << input << "\u00B0C is " << f << "\u00B0F" << endl;
+      const auto c{cTemp(input)};
+      const auto f{fTemp(input)};
+      const auto precision{vm["precision"].as<int>()};
+
+      cout << fixed << setprecision(precision) << input << "\u00B0F is " << c
+           << "\u00B0C" << endl;
+      cout << fixed << setprecision(precision) << input << "\u00B0C is " << f
+           << "\u00B0F" << endl;
     } else {
       cout << desc << endl;
       exit(0);
