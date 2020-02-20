@@ -28,13 +28,13 @@ It will give you:
 
 You can also adjust the precision with the --precision switch, so that:
 
-  temper --precision=3 -320.4
+	temper --precision=3 -320.4
 
 gives you:
 
 
-  -320.400°F is -195.778°C
-  -320.400°C is -544.720°F
+	-320.400°F is -195.778°C
+	-320.400°C is -544.720°F
 
 The default precision is 1.
 
