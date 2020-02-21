@@ -22,9 +22,19 @@ matrix:
           update: true
           packages:
             - libboost-all-dev
+    - os: osx
+      compiler=clang
+      env: COMPILER=clang++
+      addons:
+        brew:
+          update: true
+          packages:
+            - boost
+            - meson
+            - ninja
 
 install:
-  - pip install meson ninja
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then pip install meson ninja; fi
 
 script:
   - CXX=${COMPILER} meson build
