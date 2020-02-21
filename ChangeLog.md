@@ -3,8 +3,8 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [v1.2.2](https://github.com/sramsay/json/releases/tag/v1.2.2)
 
--    Added precision switch
+-   Added precision switch
 
 ## [v1.1.0](https://github.com/sramsay/json/releases/tag/v1.1.0)
 
--    Added various C++ optimizations
+-   Added various C++ optimizations
