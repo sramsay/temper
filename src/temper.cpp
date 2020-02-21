@@ -23,6 +23,7 @@ namespace bpo = boost::program_options;
 namespace bps = boost::program_options::command_line_style;
 
 int main(int argc, char *argv[]) {
+  auto exitStatus{0};
   try {
     bpo::options_description desc("temper [num]");
     desc.add_options()("help", "Print this message")(
@@ -50,15 +51,9 @@ int main(int argc, char *argv[]) {
 
     if (vm.count("version") != 0) {
       cout << printVersion();
-      exit(0);
-    }
-
-    if (vm.count("help") != 0) {
+    } else if (vm.count("help") != 0) {
       cout << desc << endl;
-      exit(0);
-    }
-
-    if (vm.count("input-value") != 0) {
+    } else if (vm.count("input-value") != 0) {
       const auto input{vm["input-value"].as<double>()};
       const auto c{cTemp(input)};
       const auto f{fTemp(input)};
@@ -74,7 +69,13 @@ int main(int argc, char *argv[]) {
     }
   } catch (bpo::invalid_option_value &e) {
     cout << "Input must be a number." << endl;
+    exitStatus = 1;
+    return exitStatus;
   } catch (exception &e) {
     cerr << "Error: " << e.what() << endl;
+    exitStatus = 1;
+    return exitStatus;
   }
+
+  return exitStatus;
 }

@@ -5,7 +5,7 @@
 #include <iosfwd>
 
 constexpr auto PROGRAM{"temper"};
-constexpr auto VERSION{"1.2.2"};
+constexpr auto VERSION{"1.2.3"};
 constexpr auto DATES{"2019-2020"};
 
 std::string printVersion();
