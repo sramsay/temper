@@ -6,4 +6,6 @@ extraction:
      configure:
         command:
         - meson build
-        - ninja -C build
+     index:
+       build_command:
+         - ninja -C build
