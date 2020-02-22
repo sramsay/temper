@@ -1,0 +1,1777 @@
+2020-02-22T19:03:18.491544Z|cov-build|47593|info|> cov-build 2019.03 (build 2c0f9c8cf4 p-pacific1-push-35439.872)
+2020-02-22T19:03:18.491836Z|cov-build|47593|info|> Coverity Build Capture (64-bit) version 2019.03 on Darwin 19.3.0 x86_64
+2020-02-22T19:03:18.491836Z|cov-build|47593|info|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-02-22T19:03:18.491836Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491879Z|cov-build|47593|info|> Dumping from hostname : oxide.local
+2020-02-22T19:03:18.491879Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> Platform info:
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> Sysname = Darwin
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> Release = 19.3.0
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> Machine = x86_64
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> [ERROR] This platform is not supported by Coverity.
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> [ERROR] See documentation for the list of supported platforms.
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491895Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491946Z|cov-build|47593|info|> [NOTE] Continuing anyway because COVERITY_UNSUPPORTED is set
+2020-02-22T19:03:18.491946Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.491961Z|cov-build|47593|info|> cov-build command: cov-build --dir cov-int ninja -C build -v 
+2020-02-22T19:03:18.491971Z|cov-build|47593|info|> cov-build expanded command: cov-build --dir cov-int ninja -C build -v 
+2020-02-22T19:03:18.492676Z|cov-build|47593|info|> build command: /usr/local/Cellar/ninja/1.10.0/bin/ninja -C build -v
+2020-02-22T19:03:18.492694Z|cov-build|47593|info|> thunk command: /var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T/cov-sramsay/24775d52758a17b5af6ebf918171f28e/sh /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-internal-thunk.sh ninja -C build -v
+2020-02-22T19:03:18.492694Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.492726Z|cov-build|47593|info|> Set UseSharedCompilation to false.
+2020-02-22T19:03:18.492740Z|cov-build|47593|info|> Set COVERITY_BIN to /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin
+2020-02-22T19:03:18.492764Z|cov-build|47593|info|> Set COVERITY_SITE_CC to Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll;Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe;apt;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-3;g++-4;gcc;gcc-3;gcc-4;java;javac;javaw;ld;link;msbuild;razor;scala;scalac;swiftc;vbc;vbc.dll
+2020-02-22T19:03:18.492775Z|cov-build|47593|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to dotnet
+2020-02-22T19:03:18.492789Z|cov-build|47593|info|> Set COVERITY_TEMP to /var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T/cov-sramsay/24775d52758a17b5af6ebf918171f28e
+2020-02-22T19:03:18.492807Z|cov-build|47593|info|> Set COVERITY_COMMON_TEMP to /var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T
+2020-02-22T19:03:18.492822Z|cov-build|47593|info|> Set COVERITY_IDIR to /Users/sramsay/projects/temper/cov-int
+2020-02-22T19:03:18.492844Z|cov-build|47593|info|> Set COVERITY_OUTPUT to /Users/sramsay/projects/temper/cov-int/build-log.txt
+2020-02-22T19:03:18.492853Z|cov-build|47593|info|> Set COVERITY_LOG to /Users/sramsay/projects/temper/cov-int/build-log.txt
+2020-02-22T19:03:18.492873Z|cov-build|47593|info|> Set COVERITY_OUTPUT_ENCODING to UTF-8
+2020-02-22T19:03:18.492883Z|cov-build|47593|info|> Set COVERITY_SYSTEM_ENCODING to UTF-8
+2020-02-22T19:03:18.492893Z|cov-build|47593|info|> Set COVERITY_EMIT to /Users/sramsay/projects/temper/cov-int/emit
+2020-02-22T19:03:18.492909Z|cov-build|47593|info|> Set COVERITY_EMIT to /Users/sramsay/projects/temper/cov-int/emit
+2020-02-22T19:03:18.492925Z|cov-build|47593|info|> Set COVERITY_ENABLE_JAVA_PARSE_ERROR_RECOVERY to 1
+2020-02-22T19:03:18.492997Z|cov-build|47593|info|> Set COVERITY_JAVA_CONFIG to javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2020-02-22T19:03:18.493036Z|cov-build|47593|info|> Set COVERITY_IS_COMPILER to 0
+2020-02-22T19:03:18.493043Z|cov-build|47593|info|> Set COVERITY_TOP_PROCESS to 0
+2020-02-22T19:03:18.493049Z|cov-build|47593|info|> Set COVERITY_IS_COMPILER_DESCENDANT to 0
+2020-02-22T19:03:18.493054Z|cov-build|47593|info|> Set COVERITY_DISENGAGE_EXES to "qemuwrapper;qemu-aarch64;qemu-alpha;qemu-arm;qemu-armeb;qemu-cris;qemu-i386;qemu-m68k;qemu-microblaze;qemu-mips;qemu-mipsel;qemu-nios2;qemu-ppc;qemu-ppc64;qemu-ppc64abi32;qemu-sh4;qemu-sh4eb;qemu-sparc;qemu-sparc32plus;qemu-sparc64;qemu-x86_64"
+2020-02-22T19:03:18.493079Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493079Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493079Z|cov-build|47593|info|> Dumping configuration:
+2020-02-22T19:03:18.493079Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493093Z|cov-build|47593|info|> User/default configuration:
+2020-02-22T19:03:18.493093Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|> Configuration read from: command-line
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/coverity_config.xml
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|>     Node: prevent
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|>       Node: dir Value: /Users/sramsay/projects/temper/cov-int
+2020-02-22T19:03:18.493102Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-1/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-2/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-1/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-2/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-ld-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-3/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-3/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javac-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-java-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-apt-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javaw-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-jsp-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-android-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-capture-config-files-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_devenv-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_msbuild-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_link-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-1/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-2/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-dotnet-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-1/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-2/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-3/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-4/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-5/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-6/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javascript-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-html-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-typescript-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-jsx-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vue-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-scalac-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-scala-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-swiftc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vbc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vbc-config-1/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-ruby-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-php-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-python-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxxcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|>     Node: include Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.493131Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: comp_name Value: gcc
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: comp_translator Value: gcc
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: id Value: gcc-gcc-.*
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: id Value: g++-gcc-.*
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: id Value: g++cc-gcc-.*
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|>   Node: md5 Value: 220ab2f621b426ef21b5bff0d14bd626
+2020-02-22T19:03:18.493334Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-0/coverity_config.xml
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: comp_name Value: g++
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: comp_translator Value: g++
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: id Value: g++-g++-.*
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: id Value: g++cc-g++-.*
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|>   Node: md5 Value: d8da15d655e23f85d5c6ae35de65d439
+2020-02-22T19:03:18.493423Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-1/coverity_config.xml
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: comp_name Value: gcc-3
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: comp_translator Value: gcc
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: id Value: gcc-gcc-3-.*
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: id Value: g++-gcc-3-.*
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: id Value: g++cc-gcc-3-.*
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-1/../user_nodefs.h
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|>   Node: md5 Value: 6a6dc6f1a6c9360514c721c673fa1951
+2020-02-22T19:03:18.493623Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-2/coverity_config.xml
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: comp_name Value: gcc-4
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: comp_translator Value: gcc
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: id Value: gcc-gcc-4-.*
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: id Value: g++-gcc-4-.*
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: id Value: g++cc-gcc-4-.*
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-2/../user_nodefs.h
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|>   Node: md5 Value: 6f1a220d892e908cc9817e94bdeb7bc5
+2020-02-22T19:03:18.493716Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-1/coverity_config.xml
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: comp_name Value: g++-3
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: comp_translator Value: g++
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: id Value: g++-g++-3-.*
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-1/../user_nodefs.h
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: id Value: g++cc-g++-3-.*
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-1/../user_nodefs.h
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|>   Node: md5 Value: ada4013796c1b19ed1fe7ebb4197cd2d
+2020-02-22T19:03:18.493811Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-2/coverity_config.xml
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: comp_name Value: g++-4
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: comp_translator Value: g++
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: id Value: g++-g++-4-.*
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-2/../user_nodefs.h
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: id Value: g++cc-g++-4-.*
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-2/../user_nodefs.h
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|>   Node: md5 Value: deb1268a1fd912fa66d290aac3a8d6e1
+2020-02-22T19:03:18.493886Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-ld-config-0/coverity_config.xml
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: comp_name Value: ld
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: comp_translator Value: ld
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: id Value: ld-ld-.*
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-ld-config-0/../user_nodefs.h
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|>   Node: md5 Value: a31ebdf549aecdabc7c15e5c23be5e63
+2020-02-22T19:03:18.493953Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-3/coverity_config.xml
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: comp_name Value: cc
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: comp_translator Value: gcc
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: id Value: gcc-cc-.*
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: id Value: g++-cc-.*
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: id Value: g++cc-cc-.*
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-gcc-config-3/../user_nodefs.h
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|>   Node: md5 Value: 5ab1d465abf1e699248ecdb7fe5931c0
+2020-02-22T19:03:18.494016Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-3/coverity_config.xml
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: comp_name Value: c++
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: comp_translator Value: g++
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: comp_generic Value: gnu
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: id Value: g++-c++-.*
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-3/../user_nodefs.h
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: id Value: g++cc-c++-.*
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-g++-config-3/../user_nodefs.h
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|>   Node: md5 Value: 92107d6a420ac9dd06caaaf4fa667276
+2020-02-22T19:03:18.494095Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javac-config-0/coverity_config.xml
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: comp_name Value: javac
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: comp_translator Value: javac
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: comp_lang Value: Static Java
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: id Value: javac-javac-.*
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|>   Node: md5 Value: 4dff82855a5f75486f23dc3987a065c8
+2020-02-22T19:03:18.494184Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-java-config-0/coverity_config.xml
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: comp_name Value: java
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: comp_translator Value: java
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: comp_lang Value: Static Java
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: id Value: java-java-.*
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|>   Node: md5 Value: 670e0eff61ca6e268d4c53f998738922
+2020-02-22T19:03:18.494241Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-apt-config-0/coverity_config.xml
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: comp_name Value: apt
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: comp_translator Value: apt
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: comp_lang Value: Static Java
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: id Value: apt-apt-.*
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|>   Node: md5 Value: 0c3c17692884987df5fe47566993553e
+2020-02-22T19:03:18.494407Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javaw-config-0/coverity_config.xml
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: comp_name Value: javaw
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: comp_translator Value: javaw
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: comp_lang Value: Static Java
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: id Value: javaw-javaw-.*
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|>   Node: md5 Value: aa3bf49b5164470df847ce74b96aa069
+2020-02-22T19:03:18.494468Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-jsp-config-0/coverity_config.xml
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-jsp-0
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: comp_translator Value: jsp
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.(jsp|jspx)$
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: id Value: jsp-cov-filesystem-capture-jsp-0-.*
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|>   Node: md5 Value: 425f5b1409471a4a55890e518ffea917
+2020-02-22T19:03:18.494523Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-android-config-0/coverity_config.xml
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-android-0
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: comp_translator Value: android
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: comp_generic Value: java
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml)$
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: id Value: android-cov-filesystem-capture-android-0-.*
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|>   Node: md5 Value: 2038ccdce64ccbc0d91a6d98e3ada876
+2020-02-22T19:03:18.494594Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-capture-config-files-config-0/coverity_config.xml
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: comp_translator Value: capture-config-files
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: comp_generic Value: capture_config_files
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: file_include_pattern Value: $capture-config-files$
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|>   Node: md5 Value: b94e617f98adb465b84e44c2bb1187e2
+2020-02-22T19:03:18.494652Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc-config-0/coverity_config.xml
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: comp_name Value: cl
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: comp_translator Value: msvc
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: comp_generic Value: msvc
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: id Value: msvc-cl-.*
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_instrument_config_version
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: 3
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_header_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/sdk/runtime/ta-runtime
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_name
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: x64
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: x86
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: id Value: msvc_cxx-cl-.*
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_instrument_config_version
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: 3
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_header_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/sdk/runtime/ta-runtime
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_name
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: x64
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: x86
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_path
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|>   Node: md5 Value: 7ae92d66f86174574b13b5a9185c2011
+2020-02-22T19:03:18.494710Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_devenv-config-0/coverity_config.xml
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: comp_name Value: devenv
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: comp_translator Value: msvc_devenv
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: comp_generic Value: msvc
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: id Value: msvc_devenv-devenv-.*
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_devenv-config-0/../user_nodefs.h
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|>   Node: md5 Value: 1bd6116a591fe1eeb03a04d0299f415d
+2020-02-22T19:03:18.494976Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_msbuild-config-0/coverity_config.xml
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: comp_name Value: msbuild
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: comp_translator Value: msvc_msbuild
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: comp_generic Value: msvc
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: id Value: msvc_msbuild-msbuild-.*
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_msbuild-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|>   Node: md5 Value: 90758a4508778ab76c418f64362bed29
+2020-02-22T19:03:18.495042Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_link-config-0/coverity_config.xml
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: comp_name Value: link
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: comp_translator Value: msvc_link
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: comp_generic Value: msvc
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: id Value: msvc_link-link-.*
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-msvc_link-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: var_name Value: cov_instrument_config_version
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: 3
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_header_path
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/sdk/runtime/ta-runtime
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_name
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: x64
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: x86
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: instrument_variable
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: var_name Value: cov_lib_path
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>           Node: cond_platform_value
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: platform_name Value: all
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>             Node: var_value Value: /data00/hudson_home/workspace/SCAN/kits/cov-analysis-macosx-2019.03/lib
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|>   Node: md5 Value: 6580db24a019fbf173bee60ad30977dc
+2020-02-22T19:03:18.495099Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-0/coverity_config.xml
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: comp_name Value: csc
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: comp_translator Value: csc
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: comp_lang Value: C#
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: comp_generic Value: csc
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: id Value: csc-csc-.*
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|>   Node: md5 Value: fe090f9c5ade85b6791417ae28e7af34
+2020-02-22T19:03:18.495253Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-1/coverity_config.xml
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: comp_name Value: csc2
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: comp_translator Value: csc
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: comp_lang Value: C#
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: comp_generic Value: csc
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: id Value: csc-csc2-.*
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|>   Node: md5 Value: 977437d947559cc8595a296b529da4b3
+2020-02-22T19:03:18.495315Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-csc-config-2/coverity_config.xml
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: comp_name Value: csc.dll
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: comp_translator Value: csc
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: comp_lang Value: C#
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: comp_generic Value: csc
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: id Value: csc-csc.dll-.*
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|>   Node: md5 Value: d7617a61a1e5d38ea17e0065e15a334c
+2020-02-22T19:03:18.495368Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-dotnet-config-0/coverity_config.xml
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: comp_name Value: dotnet
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: comp_translator Value: dotnet
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: comp_lang Value: C#
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: comp_capture_descendants Value: true
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: comp_generic Value: dotnet
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: id Value: dotnet-dotnet-.*
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|>   Node: md5 Value: c1f04f52f32e19ee321f007827420925
+2020-02-22T19:03:18.495446Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-0/coverity_config.xml
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: comp_name Value: razor
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: id Value: razor-razor-.*
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|>   Node: md5 Value: 299c29c5e1aed07e748c20434abece6a
+2020-02-22T19:03:18.495525Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-1/coverity_config.xml
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.exe-.*
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|>   Node: md5 Value: b8062469abf35bf27e59c61097a25898
+2020-02-22T19:03:18.495580Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-2/coverity_config.xml
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation.dll-.*
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|>   Node: md5 Value: a9f1338dd3da86ae5a0b02feb72011bc
+2020-02-22T19:03:18.495634Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-3/coverity_config.xml
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.exe-.*
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|>   Node: md5 Value: d148b26c0cca97f3cfbca9c9e97fbd2c
+2020-02-22T19:03:18.495698Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-4/coverity_config.xml
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.exe-.*
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|>   Node: md5 Value: 4192dd38aff0a2b1f462f5ea2de56602
+2020-02-22T19:03:18.495752Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-5/coverity_config.xml
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x86.dll-.*
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|>   Node: md5 Value: 9fac531b04a3ec13b4f2c7884a7b9d4d
+2020-02-22T19:03:18.495806Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-razor-config-6/coverity_config.xml
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: comp_name Value: Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: comp_translator Value: razor
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: comp_lang Value: Razor
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: comp_generic Value: razor
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: id Value: razor-Microsoft.AspNetCore.Mvc.Razor.ViewCompilation-x64.dll-.*
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|>   Node: md5 Value: 42e63af2dc0e9a8129a530b0de6d639f
+2020-02-22T19:03:18.495868Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: comp_name Value: clang
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: comp_translator Value: clangcc
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: id Value: clangcc-clang-.*
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: id Value: clangcxx-clang-.*
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: id Value: clangcxxcc-clang-.*
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: id Value: clangobjc-clang-.*
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: id Value: clangobjcxx-clang-.*
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|>   Node: md5 Value: 15fd1279f5d22c97f5ebadaac9bf1e6b
+2020-02-22T19:03:18.495922Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: comp_name Value: clang++
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: comp_translator Value: clangcxx
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: id Value: clangcxx-clang++-.*
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: id Value: clangcxxcc-clang++-.*
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: id Value: clangobjc-clang++-.*
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: id Value: clangobjcxx-clang++-.*
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-clangcxx-config-0/../user_nodefs.h
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|>   Node: md5 Value: a5fffed9db920f7281ac5687f6514630
+2020-02-22T19:03:18.496039Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-javascript-config-0/coverity_config.xml
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: comp_translator Value: javascript
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: comp_generic Value: javascript
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.(js|xsjs|xsjslib|map)$
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|>   Node: md5 Value: 5dc7fe28a5d7a345225ec3edabbf5701
+2020-02-22T19:03:18.496143Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-html-config-0/coverity_config.xml
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: comp_translator Value: html
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: comp_generic Value: javascript
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.(html|htm)$
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: id Value: html-cov-filesystem-capture-html-0-.*
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|>   Node: md5 Value: 874e134728d1412d745d699feb38e141
+2020-02-22T19:03:18.496210Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-typescript-config-0/coverity_config.xml
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-typescript-0
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: comp_translator Value: typescript
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: comp_generic Value: typescript
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*(\.ts(x?)|tsconfig.json)$
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: id Value: typescript-cov-filesystem-capture-typescript-0-.*
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|>   Node: md5 Value: 0fbcd451629a877b0945511269f745bd
+2020-02-22T19:03:18.496286Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-jsx-config-0/coverity_config.xml
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-jsx-0
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: comp_translator Value: jsx
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: comp_generic Value: javascript
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.jsx$
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: id Value: jsx-cov-filesystem-capture-jsx-0-.*
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|>   Node: md5 Value: 6ef7db223c129acd408eed304126e3a1
+2020-02-22T19:03:18.496353Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vue-config-0/coverity_config.xml
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-vue-0
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: comp_translator Value: vue
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: comp_generic Value: javascript
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.vue$
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: id Value: vue-cov-filesystem-capture-vue-0-.*
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|>   Node: md5 Value: e2e0d3714ab927a7bdeebe5c48dde342
+2020-02-22T19:03:18.496428Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-scalac-config-0/coverity_config.xml
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: comp_name Value: scalac
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: comp_translator Value: scalac
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: comp_lang Value: Scala
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: comp_generic Value: scala
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: id Value: scalac-scalac-.*
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|>   Node: md5 Value: 72f6e51a33977034a91c37366e5501cc
+2020-02-22T19:03:18.496495Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-scala-config-0/coverity_config.xml
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: comp_name Value: scala
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: comp_translator Value: scala
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: comp_lang Value: Scala
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: comp_generic Value: scala
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: id Value: scala-scala-.*
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|>   Node: md5 Value: 06e293540a5f4dc8f97f0f06a6021b74
+2020-02-22T19:03:18.496548Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-swiftc-config-0/coverity_config.xml
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: comp_name Value: swiftc
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: comp_translator Value: swiftc
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: comp_lang Value: Swift
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: comp_generic Value: swift
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: id Value: swiftc-swiftc-.*
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|>   Node: md5 Value: 23140da751bb0ef0b36a4b63d655d971
+2020-02-22T19:03:18.496610Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vbc-config-0/coverity_config.xml
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: comp_name Value: vbc
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: comp_translator Value: vbc
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: comp_lang Value: Visual Basic
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: comp_generic Value: vbc
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: id Value: vbc-vbc-.*
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|>   Node: md5 Value: feeb8b03a6f975f0aaca18abe6c96895
+2020-02-22T19:03:18.496665Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-vbc-config-1/coverity_config.xml
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: comp_name Value: vbc.dll
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: comp_translator Value: vbc
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: comp_lang Value: Visual Basic
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: comp_generic Value: vbc
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: id Value: vbc-vbc.dll-.*
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|>   Node: md5 Value: fb11aa1996139335dbc0bdc5b4851b37
+2020-02-22T19:03:18.496720Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-ruby-config-0/coverity_config.xml
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-ruby-0
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: comp_translator Value: ruby
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: comp_generic Value: ruby
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*(\.rb|Gemfile)$
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: id Value: ruby-cov-filesystem-capture-ruby-0-.*
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|>   Node: md5 Value: 9a95acc499de60467aeb7e3b29315f90
+2020-02-22T19:03:18.496782Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-php-config-0/coverity_config.xml
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-php-0
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: comp_translator Value: php
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: comp_generic Value: php
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.ph(p|p3|p4|p5|p7|tml)$
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: id Value: php-cov-filesystem-capture-php-0-.*
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|>   Node: md5 Value: 6db33a0a68d7f8c9b0f5085b9afaab3b
+2020-02-22T19:03:18.496839Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/template-python-config-0/coverity_config.xml
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: template_compiler Value: true
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: comp_name Value: cov-filesystem-capture-python-0
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: comp_translator Value: python
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: comp_lang Value: Non Compiled
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: comp_generic Value: python
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: file_include_pattern Value: ^.*\.py$
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: id Value: python-cov-filesystem-capture-python-0-.*
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|>   Node: md5 Value: 4498fd410774a9faa0109aad2e182841
+2020-02-22T19:03:18.496896Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_name Value: clang++
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_name Value: clang
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_name Value: clang-9
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_translator Value: clangcxx
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_front_end Value: cov-internal-emit-clang
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_desc Value: Clang compiler (C++)
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_cxx Value: true
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_next_type Value: clangcxxcc
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: comp_require
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: id Value: clangcxx-clang++-9.0.1-0
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: version Value: 9.0.1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: is_compiler Value: true
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: is_linker Value: false
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: id Value: clangcxx-clang++-9.0.1-0
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/opt/llvm/bin/../include/c++/v1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dryrun_switch Value: -E
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dryrun_switch Value: -v
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -dM
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -E
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: preprocess_switch Value: -E
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: supports_pch Value: true
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: preprocess_output Value: -
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dependency_output Value: 2
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: dryrun_output Value: 2
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxx-config-0/coverity-compiler-compat.h
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxx-config-0/coverity-macro-compat.h
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: --no-builtin-include-paths
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: -w
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: --comp_ver
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: 9.0.1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: -target
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: -resource-dir
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -###
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: --analyze
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -cc1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -emit-ast
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -E
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -M
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -MM
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -module-file-info
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-objc
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-legacy-objc
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: --precompile
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_arg Value: -fsyntax-only
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.cpp$
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxx-config-0/../user_nodefs.h
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: expand
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>               Node: replace Value: @(.*)
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>               Node: with Value: --coverity_resp_file=$1
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: pre_trans
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>             Node: intern_trans Value: clang_pre_translate
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: post_trans
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>               Node: replace Value: coverity-xcode-10
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>               Node: with Value: 6.0.0
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: trans
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: --c++
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>             Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|>   Node: md5 Value: 69e80143d4a46a2009e7514a8bf637d6
+2020-02-22T19:03:18.496962Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxxcc-config-0/coverity_config.xml
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_name Value: clang++
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_name Value: clang
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_name Value: clang-9
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_translator Value: clangcxxcc
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_lang Value: C/C++
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_front_end Value: cov-internal-emit-clang
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_desc Value: Clang compiler (C++ as C)
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_next_type Value: clangobjc
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: comp_require
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: id Value: clangcxxcc-clang++-9.0.1-0
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: version Value: 9.0.1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: is_compiler Value: true
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: is_linker Value: false
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: id Value: clangcxxcc-clang++-9.0.1-0
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dryrun_switch Value: -E
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dryrun_switch Value: -v
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dryrun_switch Value: -x
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dryrun_switch Value: c
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -dM
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -E
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -x
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dump_macros_arg Value: c
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: preprocess_switch Value: -E
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: preprocess_switch Value: -x
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: preprocess_switch Value: c
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: supports_pch Value: true
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: preprocess_output Value: -
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dependency_output Value: 2
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: dryrun_output Value: 2
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxxcc-config-0/coverity-compiler-compat.h
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxxcc-config-0/coverity-macro-compat.h
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: --no-builtin-include-paths
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: -w
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: --comp_ver
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: 9.0.1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: -target
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: -resource-dir
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -###
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: --analyze
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -cc1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -emit-ast
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -E
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -M
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -MM
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -module-file-info
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-objc
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-legacy-objc
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: --precompile
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_arg Value: -fsyntax-only
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.cpp$
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: opt_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangcxxcc-config-0/../user_nodefs.h
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: expand
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>               Node: replace Value: @(.*)
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>               Node: with Value: --coverity_resp_file=$1
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: pre_trans
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: intern_trans Value: clang_pre_translate
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: post_trans
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>               Node: replace Value: coverity-xcode-10
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>               Node: with Value: 6.0.0
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: pre_trans
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: -coverity_cxx_suffixes=c;i
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: -coverity_cxx_header_suffixes=h
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: trans
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: --c
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>             Node: includes_from_env_var Value: C_INCLUDE_PATH
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|>   Node: md5 Value: 12291ea8d23dc3982489d4f2404d5eae
+2020-02-22T19:03:18.497247Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjc-config-0/coverity_config.xml
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_name Value: clang++
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_name Value: clang
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_name Value: clang-9
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_translator Value: clangobjc
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_lang Value: Objective-C
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_front_end Value: cov-internal-emit-clang
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_desc Value: Clang compiler (Objective-C)
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_next_type Value: clangobjcxx
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: comp_require
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: id Value: clangobjc-clang++-9.0.1-0
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: version Value: 9.0.1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: is_compiler Value: true
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: is_linker Value: false
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: id Value: clangobjc-clang++-9.0.1-0
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dryrun_switch Value: -E
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dryrun_switch Value: -v
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -dM
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -E
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: preprocess_switch Value: -E
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: supports_pch Value: true
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: preprocess_output Value: -
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dependency_output Value: 2
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: dryrun_output Value: 2
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjc-config-0/coverity-compiler-compat.h
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjc-config-0/coverity-macro-compat.h
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: --no-builtin-include-paths
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: -w
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: --comp_ver
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: 9.0.1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: -target
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: -resource-dir
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -###
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: --analyze
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -cc1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -emit-ast
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -E
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -M
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -MM
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -module-file-info
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-objc
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-legacy-objc
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: --precompile
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_arg Value: -fsyntax-only
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.cpp$
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: expand
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>               Node: replace Value: @(.*)
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>               Node: with Value: --coverity_resp_file=$1
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: pre_trans
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>             Node: intern_trans Value: clang_pre_translate
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: post_trans
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>               Node: replace Value: coverity-xcode-10
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>               Node: with Value: 6.0.0
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: trans
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: --objc
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|>   Node: md5 Value: 54f06e4c4dad8eba850f6b170ada98f2
+2020-02-22T19:03:18.497558Z|cov-build|47593|info|> 
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|> Configuration read from: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjcxx-config-0/coverity_config.xml
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|> Node: coverity
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>   Node: cit_version Value: 1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>   Node: config
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>     Node: build
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>       Node: compiler
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_name Value: clang++
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_name Value: clang
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_name Value: clang-9
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_translator Value: clangobjcxx
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_lang Value: Objective-C++
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_front_end Value: cov-internal-emit-clang
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_desc Value: Clang compiler (Objective-C++)
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_generic Value: clang
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: comp_require
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: id Value: clangobjcxx-clang++-9.0.1-0
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: version Value: 9.0.1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: is_compiler Value: true
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: is_linker Value: false
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>       Node: options
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: id Value: clangobjcxx-clang++-9.0.1-0
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/opt/llvm/bin/../include/c++/v1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dryrun_switch Value: -E
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dryrun_switch Value: -v
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -dM
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dump_macros_arg Value: -E
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: preprocess_switch Value: -E
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: supports_pch Value: true
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: preprocess_output Value: -
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dependency_output Value: 2
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: dryrun_output Value: 2
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjcxx-config-0/coverity-compiler-compat.h
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/cov-analysis-macosx-2019.03/config/clangobjcxx-config-0/coverity-macro-compat.h
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: --no-builtin-include-paths
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: -w
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: --comp_ver
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: 9.0.1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: -target
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: -resource-dir
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: prepend_arg Value: --no_predefines
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -###
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: --analyze
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -cc1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -emit-ast
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -E
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -M
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -MM
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -module-file-info
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-objc
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -rewrite-legacy-objc
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: --precompile
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_arg Value: -fsyntax-only
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.c{1,2}$
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: skip_file Value: conftest\.cpp$
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: expand
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>               Node: replace Value: @(.*)
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>               Node: with Value: --coverity_resp_file=$1
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: pre_trans
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>             Node: intern_trans Value: clang_pre_translate
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: post_trans
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>             Node: replace_arg_regex
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>               Node: replace Value: coverity-xcode-10
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>               Node: with Value: 6.0.0
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: trans
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>           Node: options
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>             Node: pre_prepend_arg Value: --objc++
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>         Node: begin_command_line_config
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|>   Node: md5 Value: 1bc71a1aacf8ddc703aa5230afd8b4c2
+2020-02-22T19:03:18.497829Z|cov-build|47593|info|> 
+[47595] EXECUTING: /var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T/cov-sramsay/24775d52758a17b5af6ebf918171f28e/sh /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-internal-thunk.sh ninja -C build -v
+[47595] EXECUTING: ninja -C build -v
+[47595] EXECUTING: /bin/sh -c "clang++ -Itemper@exe -I. -I.. -I/usr/local/include -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -march=native -flto=thin -stdlib=libc++ -MD -MQ 'temper@exe/src_temper.cpp.o' -MF 'temper@exe/src_temper.cpp.o.d' -o 'temper@exe/src_temper.cpp.o' -c ../src/temper.cpp"
+[47596] EXECUTING: /bin/sh -c "clang++ -Itemper@exe -I. -I.. -I/usr/local/include -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -march=native -flto=thin -stdlib=libc++ -MD -MQ 'temper@exe/src_temper.cpp.o' -MF 'temper@exe/src_temper.cpp.o.d' -o 'temper@exe/src_temper.cpp.o' -c ../src/temper.cpp"
+[47596] EXECUTING: clang++ -Itemper@exe -I. -I.. -I/usr/local/include -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -march=native -flto=thin -stdlib=libc++ -MD -MQ temper@exe/src_temper.cpp.o -MF temper@exe/src_temper.cpp.o.d -o temper@exe/src_temper.cpp.o -c ../src/temper.cpp
+[47597] CWD: /Users/sramsay/projects/temper/build
+[47597] COMPILING: /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-translate clang++ -Itemper@exe -I. -I.. -I/usr/local/include -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -g -march=native -flto=thin -stdlib=libc++ -MD -MQ temper@exe/src_temper.cpp.o -MF temper@exe/src_temper.cpp.o.d -o temper@exe/src_temper.cpp.o -c ../src/temper.cpp
+COV_TRANSLATE EXPANDED ARGS: "-Itemper@exe" "-I." "-I.." "-I/usr/local/include" "-Xclang" "-fcolor-diagnostics" "-pipe" "-Wall" "-Winvalid-pch" "-Wnon-virtual-dtor" "-Wextra" "-Wpedantic" "-g" "-march=native" "-flto=thin" "-stdlib=libc++" "-MD" "-MQ" "temper@exe/src_temper.cpp.o" "-MF" "temper@exe/src_temper.cpp.o.d" "-o" "temper@exe/src_temper.cpp.o" "-c" "../src/temper.cpp"
+Encountered compiler /usr/local/Cellar/llvm/9.0.1/bin/clang-9 for the first time, configuring it
+* Configuring /usr/local/opt/llvm/bin/clang++ as a C++ compiler
+[STATUS] clangcxx-config-0: Running sanity tests on native compiler
+[STATUS] clangcxx-config-0: Retrieving values for macros
+* Configuring /usr/local/opt/llvm/bin/clang++ as a C compiler
+[STATUS] clangcxxcc-config-0: Running sanity tests on native compiler
+[STATUS] clangcxxcc-config-0: Retrieving values for macros
+* Configuring /usr/local/opt/llvm/bin/clang++ as an Objective-C compiler
+[STATUS] clangobjc-config-0: Running sanity tests on native compiler
+[STATUS] clangobjc-config-0: Retrieving values for macros
+* Configuring /usr/local/opt/llvm/bin/clang++ as an Objective-C++ compiler
+[STATUS] clangobjcxx-config-0: Running sanity tests on native compiler
+[STATUS] clangobjcxx-config-0: Retrieving values for macros
+Added template compiler configuration instance /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/coverity_config.xml
+Configuration read from: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: include Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity_config.xml
+    Node: include Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxxcc-config-0/coverity_config.xml
+    Node: include Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjc-config-0/coverity_config.xml
+    Node: include Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjcxx-config-0/coverity_config.xml
+Configuration read from: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: clang++
+        Node: comp_name Value: clang
+        Node: comp_name Value: clang-9
+        Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+        Node: comp_translator Value: clangcxx
+        Node: comp_lang Value: C/C++
+        Node: comp_front_end Value: cov-internal-emit-clang
+        Node: comp_desc Value: Clang compiler (C++)
+        Node: comp_cxx Value: true
+        Node: comp_next_type Value: clangcxxcc
+        Node: comp_generic Value: clang
+        Node: comp_require Value: -march=native -stdlib=libc++
+        Node: id Value: clangcxx-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: version Value: 9.0.1
+        Node: is_compiler Value: true
+        Node: is_linker Value: false
+      Node: options
+        Node: id Value: clangcxx-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: template_config_option_id Value: clangcxx-clang++-.*
+        Node: sysinclude_dir Value: /usr/local/opt/llvm/bin/../include/c++/v1
+        Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_switch Value: -E
+        Node: supports_pch Value: true
+        Node: preprocess_output Value: -
+        Node: dependency_output Value: 2
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --no-builtin-include-paths
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.0.1
+        Node: prepend_arg Value: -target
+        Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+        Node: prepend_arg Value: -resource-dir
+        Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: --analyze
+        Node: skip_arg Value: -cc1
+        Node: skip_arg Value: -emit-ast
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -module-file-info
+        Node: skip_arg Value: -rewrite-objc
+        Node: skip_arg Value: -rewrite-legacy-objc
+        Node: skip_arg Value: --precompile
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: opt_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/../user_nodefs.h
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: clang_pre_translate
+        Node: post_trans
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: coverity-xcode-10
+              Node: with Value: 6.0.0
+        Node: trans
+          Node: options
+            Node: pre_prepend_arg Value: --c++
+            Node: includes_from_env_var Value: CPLUS_INCLUDE_PATH
+        Node: begin_command_line_config
+  Node: md5 Value: a9bffea164f233d317fd1f5b4506f870
+Configuration read from: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxxcc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: clang++
+        Node: comp_name Value: clang
+        Node: comp_name Value: clang-9
+        Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+        Node: comp_translator Value: clangcxxcc
+        Node: comp_lang Value: C/C++
+        Node: comp_front_end Value: cov-internal-emit-clang
+        Node: comp_desc Value: Clang compiler (C++ as C)
+        Node: comp_next_type Value: clangobjc
+        Node: comp_generic Value: clang
+        Node: comp_require Value: -march=native -stdlib=libc++
+        Node: id Value: clangcxxcc-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: version Value: 9.0.1
+        Node: is_compiler Value: true
+        Node: is_linker Value: false
+      Node: options
+        Node: id Value: clangcxxcc-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: template_config_option_id Value: clangcxxcc-clang++-.*
+        Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dryrun_switch Value: -x
+        Node: dryrun_switch Value: c
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: dump_macros_arg Value: -x
+        Node: dump_macros_arg Value: c
+        Node: preprocess_switch Value: -E
+        Node: preprocess_switch Value: -x
+        Node: preprocess_switch Value: c
+        Node: supports_pch Value: true
+        Node: preprocess_output Value: -
+        Node: dependency_output Value: 2
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxxcc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxxcc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --no-builtin-include-paths
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.0.1
+        Node: prepend_arg Value: -target
+        Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+        Node: prepend_arg Value: -resource-dir
+        Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: --analyze
+        Node: skip_arg Value: -cc1
+        Node: skip_arg Value: -emit-ast
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -module-file-info
+        Node: skip_arg Value: -rewrite-objc
+        Node: skip_arg Value: -rewrite-legacy-objc
+        Node: skip_arg Value: --precompile
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: opt_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxxcc-config-0/../user_nodefs.h
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: clang_pre_translate
+        Node: post_trans
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: coverity-xcode-10
+              Node: with Value: 6.0.0
+        Node: pre_trans
+          Node: options
+            Node: pre_prepend_arg Value: -coverity_cxx_suffixes=c;i
+            Node: pre_prepend_arg Value: -coverity_cxx_header_suffixes=h
+        Node: trans
+          Node: options
+            Node: pre_prepend_arg Value: --c
+            Node: includes_from_env_var Value: C_INCLUDE_PATH
+        Node: begin_command_line_config
+  Node: md5 Value: c8a30f46deb0bccac2f1fecf010b8cc7
+Configuration read from: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjc-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: clang++
+        Node: comp_name Value: clang
+        Node: comp_name Value: clang-9
+        Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+        Node: comp_translator Value: clangobjc
+        Node: comp_lang Value: Objective-C
+        Node: comp_front_end Value: cov-internal-emit-clang
+        Node: comp_desc Value: Clang compiler (Objective-C)
+        Node: comp_next_type Value: clangobjcxx
+        Node: comp_generic Value: clang
+        Node: comp_require Value: -march=native -stdlib=libc++
+        Node: id Value: clangobjc-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: version Value: 9.0.1
+        Node: is_compiler Value: true
+        Node: is_linker Value: false
+      Node: options
+        Node: id Value: clangobjc-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: template_config_option_id Value: clangobjc-clang++-.*
+        Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_switch Value: -E
+        Node: supports_pch Value: true
+        Node: preprocess_output Value: -
+        Node: dependency_output Value: 2
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjc-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjc-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --no-builtin-include-paths
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.0.1
+        Node: prepend_arg Value: -target
+        Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+        Node: prepend_arg Value: -resource-dir
+        Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: --analyze
+        Node: skip_arg Value: -cc1
+        Node: skip_arg Value: -emit-ast
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -module-file-info
+        Node: skip_arg Value: -rewrite-objc
+        Node: skip_arg Value: -rewrite-legacy-objc
+        Node: skip_arg Value: --precompile
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: clang_pre_translate
+        Node: post_trans
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: coverity-xcode-10
+              Node: with Value: 6.0.0
+        Node: trans
+          Node: options
+            Node: pre_prepend_arg Value: --objc
+        Node: begin_command_line_config
+  Node: md5 Value: 26577c4a1aee3090eec2db3af2310b7a
+Configuration read from: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjcxx-config-0/coverity_config.xml
+Node: coverity
+  Node: cit_version Value: 1
+  Node: config
+    Node: build
+      Node: compiler
+        Node: comp_name Value: clang++
+        Node: comp_name Value: clang
+        Node: comp_name Value: clang-9
+        Node: comp_dir Value: /usr/local/Cellar/llvm/9.0.1/bin
+        Node: comp_translator Value: clangobjcxx
+        Node: comp_lang Value: Objective-C++
+        Node: comp_front_end Value: cov-internal-emit-clang
+        Node: comp_desc Value: Clang compiler (Objective-C++)
+        Node: comp_generic Value: clang
+        Node: comp_require Value: -march=native -stdlib=libc++
+        Node: id Value: clangobjcxx-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: version Value: 9.0.1
+        Node: is_compiler Value: true
+        Node: is_linker Value: false
+      Node: options
+        Node: id Value: clangobjcxx-clang++-9.0.1-cef8933392db34f8e7517e6fa152a2fd-0
+        Node: template_config_option_id Value: clangobjcxx-clang++-.*
+        Node: sysinclude_dir Value: /usr/local/opt/llvm/bin/../include/c++/v1
+        Node: sysinclude_dir Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+        Node: sysinclude_dir Value: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        Node: dryrun_switch Value: -E
+        Node: dryrun_switch Value: -v
+        Node: dump_macros_arg Value: -dM
+        Node: dump_macros_arg Value: -E
+        Node: preprocess_switch Value: -E
+        Node: supports_pch Value: true
+        Node: preprocess_output Value: -
+        Node: dependency_output Value: 2
+        Node: dryrun_output Value: 2
+        Node: pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjcxx-config-0/coverity-compiler-compat.h
+        Node: macro_pre_preinclude_file Value: /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangobjcxx-config-0/coverity-macro-compat.h
+        Node: prepend_arg Value: --no-builtin-include-paths
+        Node: prepend_arg Value: -w
+        Node: prepend_arg Value: --no_predefines
+        Node: prepend_arg Value: --comp_ver
+        Node: prepend_arg Value: 9.0.1
+        Node: prepend_arg Value: -target
+        Node: prepend_arg Value: x86_64-apple-darwin19.3.0
+        Node: prepend_arg Value: -resource-dir
+        Node: prepend_arg Value: /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1
+        Node: prepend_arg Value: --no_predefines
+        Node: skip_arg Value: -###
+        Node: skip_arg Value: --analyze
+        Node: skip_arg Value: -cc1
+        Node: skip_arg Value: -emit-ast
+        Node: skip_arg Value: -E
+        Node: skip_arg Value: -M
+        Node: skip_arg Value: -MM
+        Node: skip_arg Value: -module-file-info
+        Node: skip_arg Value: -rewrite-objc
+        Node: skip_arg Value: -rewrite-legacy-objc
+        Node: skip_arg Value: --precompile
+        Node: skip_arg Value: -fsyntax-only
+        Node: skip_file Value: conftest\.c{1,2}$
+        Node: skip_file Value: conftest\.cpp$
+        Node: expand
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: @(.*)
+              Node: with Value: --coverity_resp_file=$1
+        Node: pre_trans
+          Node: options
+            Node: intern_trans Value: clang_pre_translate
+        Node: post_trans
+          Node: options
+            Node: replace_arg_regex
+              Node: replace Value: coverity-xcode-10
+              Node: with Value: 6.0.0
+        Node: trans
+          Node: options
+            Node: pre_prepend_arg Value: --objc++
+        Node: begin_command_line_config
+  Node: md5 Value: 58cdbf40b65c3f3e3efeccf6c9448a5e
+[STATUS] Compiling ../src/temper.cpp
+/Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-internal-emit-clang --dir=/Users/sramsay/projects/temper/cov-int --ignore_path=/var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T/cov-sramsay/24775d52758a17b5af6ebf918171f28e/cov-configure --ignore_path=/var/folders/j6/06p12j450lg7lshkc55g3gj40000gn/T/cov-sramsay/24775d52758a17b5af6ebf918171f28e/cov-sramsay/62a8e20a2d95edce02bf555b4be7018e --preimacros /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity-macro-compat.h --pre_preinclude /Users/sramsay/projects/temper/cov-int/emit/oxide.local/config/cef8933392db34f8e7517e6fa152a2fd/clangcxx-config-0/coverity-compiler-compat.h --no-builtin-include-paths -w --no_predefines --comp_ver 9.0.1 -target x86_64-apple-darwin19.3.0 -resource-dir /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1 --no_predefines --c++ -Itemper@exe -I. -I.. -I/usr/local/include -pipe -march=native -stdlib=libc++ -o temper@exe/src_temper.cpp.o -c -Xclang -fcolor-diagnostics --sys_include /usr/local/opt/llvm/bin/../include/c++/v1 --sys_include /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include --sys_include /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include --sys_include "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)" -x c++ ../src/temper.cpp 
+Emit for file '/Users/sramsay/projects/temper/src/temper.cpp' complete.
+[47596] EXECUTING: /usr/local/Cellar/llvm/9.0.1/bin/clang-9 -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-llvm-bc -flto=thin -disable-free -disable-llvm-verifier -discard-value-names -main-file-name temper.cpp -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu skylake -target-feature +sse2 -target-feature +cx16 -target-feature +sahf -target-feature -tbm -target-feature -avx512ifma -target-feature -sha -target-feature -gfni -target-feature -fma4 -target-feature -vpclmulqdq -target-feature +prfchw -target-feature +bmi2 -target-feature -cldemote -target-feature +fsgsbase -target-feature -ptwrite -target-feature +xsavec -target-feature +popcnt -target-feature +mpx -target-feature +aes -target-feature -avx512bitalg -target-feature -movdiri -target-feature +xsaves -target-feature -avx512er -target-feature -avx512vnni -target-feature -avx512vpopcntdq -target-feature -pconfig -target-feature -clwb -target-feature -avx512f -target-feature -clzero -target-feature -pku -target-feature +mmx -target-feature -lwp -target-feature -rdpid -target-feature -xop -target-feature +rdseed -target-feature -waitpkg -target-feature -movdir64b -target-feature -sse4a -target-feature -avx512bw -target-feature +clflushopt -target-feature +xsave -target-feature -avx512vbmi2 -target-feature +64bit -target-feature -avx512vl -target-feature +invpcid -target-feature -avx512cd -target-feature +avx -target-feature -vaes -target-feature +cx8 -target-feature +fma -target-feature +rtm -target-feature +bmi -target-feature -enqcmd -target-feature +rdrnd -target-feature -mwaitx -target-feature +sse4.1 -target-feature +sse4.2 -target-feature +avx2 -target-feature +fxsr -target-feature -wbnoinvd -target-feature +sse -target-feature +lzcnt -target-feature +pclmul -target-feature -prefetchwt1 -target-feature +f16c -target-feature +ssse3 -target-feature +sgx -target-feature -shstk -target-feature +cmov -target-feature -avx512vbmi -target-feature -avx512bf16 -target-feature +movbe -target-feature +xsaveopt -target-feature -avx512dq -target-feature +adx -target-feature -avx512pf -target-feature +sse3 -dwarf-column-info -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -ggnu-pubnames -target-linker-version 530 -coverage-notes-file /Users/sramsay/projects/temper/build/temper@exe/src_temper.cpp.gcno -resource-dir /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1 -dependency-file temper@exe/src_temper.cpp.o.d -sys-header-deps -MT temper@exe/src_temper.cpp.o -I temper@exe -I . -I .. -I /usr/local/include -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -stdlib=libc++ -internal-isystem /usr/local/opt/llvm/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -Wall -Winvalid-pch -Wnon-virtual-dtor -Wextra -Wpedantic -fdeprecated-macro -fdebug-compilation-dir /Users/sramsay/projects/temper/build -ferror-limit 19 -fmessage-length 0 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fobjc-runtime=macosx-10.15.0 -fcxx-exceptions -fexceptions -fmax-type-align=16 -fdiagnostics-show-option -fcolor-diagnostics -o temper@exe/src_temper.cpp.o -x c++ ../src/temper.cpp
+[47595] EXECUTING: /bin/sh -c "clang++  -o temper 'temper@exe/src_temper.cpp.o' -L/usr/local/lib -L/usr/local/opt/llvm/lib -Wl,-dead_strip_dylibs -Wl,-undefined,error -Wl,-headerpad_max_install_names -march=native -flto=thin -stdlib=libc++ -Wl,-rpath,/usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt"
+[47652] EXECUTING: /bin/sh -c "clang++  -o temper 'temper@exe/src_temper.cpp.o' -L/usr/local/lib -L/usr/local/opt/llvm/lib -Wl,-dead_strip_dylibs -Wl,-undefined,error -Wl,-headerpad_max_install_names -march=native -flto=thin -stdlib=libc++ -Wl,-rpath,/usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt"
+[47652] EXECUTING: clang++ -o temper temper@exe/src_temper.cpp.o -L/usr/local/lib -L/usr/local/opt/llvm/lib -Wl,-dead_strip_dylibs -Wl,-undefined,error -Wl,-headerpad_max_install_names -march=native -flto=thin -stdlib=libc++ -Wl,-rpath,/usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt
+[47653] CWD: /Users/sramsay/projects/temper/build
+[47653] COMPILING: /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-translate clang++ -o temper temper@exe/src_temper.cpp.o -L/usr/local/lib -L/usr/local/opt/llvm/lib -Wl,-dead_strip_dylibs -Wl,-undefined,error -Wl,-headerpad_max_install_names -march=native -flto=thin -stdlib=libc++ -Wl,-rpath,/usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt
+COV_TRANSLATE EXPANDED ARGS: "-o" "temper" "temper@exe/src_temper.cpp.o" "-L/usr/local/lib" "-L/usr/local/opt/llvm/lib" "-Wl,-dead_strip_dylibs" "-Wl,-undefined,error" "-Wl,-headerpad_max_install_names" "-march=native" "-flto=thin" "-stdlib=libc++" "-Wl,-rpath,/usr/local/opt/llvm/lib" "-lboost_system-mt" "-lboost_program_options-mt" "-lboost_filesystem-mt"
+[47654] EXECUTING: /usr/bin/ld -demangle -lto_library /usr/local/Cellar/llvm/9.0.1/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o temper -L/usr/local/lib -L/usr/local/opt/llvm/lib temper@exe/src_temper.cpp.o -dead_strip_dylibs -undefined error -headerpad_max_install_names -rpath /usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt -lc++ -lSystem /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/lib/darwin/libclang_rt.osx.a
+[47655] EXECUTING: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -demangle -lto_library /usr/local/Cellar/llvm/9.0.1/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o temper -L/usr/local/lib -L/usr/local/opt/llvm/lib temper@exe/src_temper.cpp.o -dead_strip_dylibs -undefined error -headerpad_max_install_names -rpath /usr/local/opt/llvm/lib -lboost_system-mt -lboost_program_options-mt -lboost_filesystem-mt -lc++ -lSystem /usr/local/Cellar/llvm/9.0.1/lib/clang/9.0.1/lib/darwin/libclang_rt.osx.a
+2020-02-22T19:03:42.354424Z|cov-build|47593|info|> Invoking cov-security-da with commands: /Users/sramsay/projects/cov-analysis-macosx-2019.03/bin/cov-security-da --dir /Users/sramsay/projects/temper/cov-int
+2020-02-22T19:03:42.476441Z|cov-build|47593|info|> 
+2020-02-22T19:03:42.476441Z|cov-build|47593|info|> Build time (cov-build overall): 00:00:24.070741
+2020-02-22T19:03:42.476441Z|cov-build|47593|info|> 
+2020-02-22T19:03:42.477293Z|cov-build|47593|info|> Build time (C/C++ emits total): 00:00:19.540766
+2020-02-22T19:03:42.477293Z|cov-build|47593|info|> 
+2020-02-22T19:03:42.477293Z|cov-build|47593|info|> 
+2020-02-22T19:03:42.477413Z|cov-build|47593|info|> Emitted 1 C/C++ compilation units (100%) successfully
+2020-02-22T19:03:42.477413Z|cov-build|47593|info|> 
+2020-02-22T19:03:42.477413Z|cov-build|47593|info|> 1 C/C++ compilation units (100%) are ready for analysis
+2020-02-22T19:03:42.477413Z|cov-build|47593|info|> The cov-build utility completed successfully.
