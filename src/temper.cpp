@@ -1,7 +1,6 @@
 #include <boost/lexical_cast/bad_lexical_cast.hpp>
 #include <boost/lexical_cast/try_lexical_convert.hpp>
 #include <boost/program_options.hpp>
-#include <cstdlib>
 #include <exception>
 #include <iomanip>
 #include <iostream>
@@ -65,7 +64,7 @@ int main(int argc, char *argv[]) {
            << "\u00B0F" << endl;
     } else {
       cout << desc << endl;
-      exit(0);
+      exitStatus = 1;
     }
   } catch (bpo::invalid_option_value &e) {
     cout << "Input must be a number." << endl;
