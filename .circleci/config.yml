@@ -7,13 +7,13 @@ jobs:
       - checkout
       - run:
           name: "Update"
-          command: apt-get update
+          command: sudo apt-get update
       - run:
           name: "Install gcc"
-          command: apt-get install gcc g++
+          command: sudo apt-get install gcc g++
       - run:
           name: "Install meson"
-          command: apt-get install meson ninja
+          command: sudo apt-get install meson ninja
       - run: 
           name: "Create build files"
           command: meson build
