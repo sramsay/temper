@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/buildpack-deps:latest
+      - image: circleci/buildpack-deps:eoan
     steps:
       - checkout
       - run:
@@ -10,7 +10,7 @@ jobs:
           command: sudo apt-get update
       - run:
           name: "Install meson"
-          command: sudo apt-get install boost meson ninja-build
+          command: sudo apt-get install libboost-all-dev meson ninja-build
       - run: 
           name: "Create build files"
           command: |
