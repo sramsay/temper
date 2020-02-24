@@ -1,7 +1,7 @@
 project('temper', 'cpp',
 	version : '1.2.3',
 	license : 'GPL3',
-	meson_version : '>= 0.50',
+	meson_version : '>= 0.49',
 	default_options : ['warning_level=3', 'buildtype=release'])
 
 subdir('src')
