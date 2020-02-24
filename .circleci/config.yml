@@ -13,7 +13,7 @@ jobs:
           command: sudo apt-get install gcc g++
       - run:
           name: "Install meson"
-          command: sudo apt-get install meson ninja
+          command: sudo apt-get install meson ninja-build
       - run: 
           name: "Create build files"
           command: meson build
