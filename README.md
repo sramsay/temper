@@ -1,6 +1,7 @@
 [![GitHub version](https://badge.fury.io/gh/sramsay%2Ftemper.svg)](https://badge.fury.io/gh/sramsay%2Ftemper)
 [![Build Status](https://travis-ci.org/sramsay/temper.svg?branch=master)](https://travis-ci.org/sramsay/temper)
 [![Build Status](https://circleci.com/gh/sramsay/temper.svg?style=svg)](https://app.circleci.com/github/sramsay/temper/pipelines?branch=master)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/20428/badge.svg)](https://scan.coverity.com/projects/sramsay-temper)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fafa33d720a84726838a83c60be1e183)](https://app.codacy.com/manual/sramsay/temper?utm_source=github.com&utm_medium=referral&utm_content=sramsay/temper&utm_campaign=Badge_Grade_Settings)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/alerts/)
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/context:cpp)
@@ -105,4 +106,4 @@ Nah, I think the metric system is way more rational, and it's the system used by
 
 [Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
 
-Last Modified: Fri Feb 21 14:42:33 CST 2020
+Last Modified: Mon Feb 24 17:51:23 CST 2020
