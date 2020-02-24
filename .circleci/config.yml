@@ -13,7 +13,9 @@ jobs:
           command: sudo apt-get install meson ninja-build
       - run: 
           name: "Create build files"
-          command: meson setup build --backend ninja
+          command: |
+            meson build
       - run:
           name: "Compile"
-          command: ninja -C build -v
+          command: |
+            ninja -C build -v
