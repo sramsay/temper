@@ -1,6 +1,6 @@
 [![GitHub version](https://badge.fury.io/gh/sramsay%2Ftemper.svg)](https://badge.fury.io/gh/sramsay%2Ftemper)
 [![Build Status](https://travis-ci.org/sramsay/temper.svg?branch=master)](https://travis-ci.org/sramsay/temper)
-[![CircleCI](https://circleci.com/gh/sramsay/temper?style=svg)](https://circleci.com/gh/sramsay/temper)
+[![CircleCI](https://circleci.com/gh/sramsay/temper?style=svg)](https://app.circleci.com/github/sramsay/temper/pipelines?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fafa33d720a84726838a83c60be1e183)](https://app.codacy.com/manual/sramsay/temper?utm_source=github.com&utm_medium=referral&utm_content=sramsay/temper&utm_campaign=Badge_Grade_Settings)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/alerts/)
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/context:cpp)
