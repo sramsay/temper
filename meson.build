@@ -6,8 +6,6 @@ project('temper', 'cpp',
 
 subdir('src')
 
-
-
 boost = dependency('boost', modules : ['system', 'program_options', 'filesystem'])
 
 executable('temper', sources, install : true, dependencies : [boost])
