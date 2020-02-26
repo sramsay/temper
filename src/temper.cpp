@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     bpo::notify(vm);
 
     if (vm.count("version") != 0) {
-      cout << printVersion();
+      printVersion();
     } else if (vm.count("help") != 0) {
       cout << desc << endl;
     } else if (vm.count("input-value") != 0) {

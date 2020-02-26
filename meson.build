@@ -1,5 +1,5 @@
 project('temper', 'cpp',
-	version : '1.2.3',
+	version : '1.2.5',
 	license : 'GPL3',
 	meson_version : '>= 0.49',
 	default_options : ['warning_level=3', 'buildtype=release'])
