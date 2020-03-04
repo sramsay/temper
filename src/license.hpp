@@ -1,6 +1,6 @@
 
-#ifndef LICENSE_INCLUDED
-#define LICENSE_INCLUDED
+#ifndef __LICENSE_INCLUDED__
+#define __LICENSE_INCLUDED__
 
 #include <iosfwd>
 
