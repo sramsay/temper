@@ -9,7 +9,7 @@ matrix:
   include:
     - os: linux
       compiler: gcc
-      env: COMPILER=ggcc
+      env: COMPILER=gcc
     - os: linux
       compiler: clang
       env: COMPILER=clang
