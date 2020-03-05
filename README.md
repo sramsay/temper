@@ -34,7 +34,7 @@ It will give you:
 
 You can also adjust the precision with the --precision switch, so that:
 
-	temper --precision=3 -320.4
+	$ temper --precision=3 -320.4
 
 gives you:
 
@@ -72,7 +72,7 @@ Yes.  Aside from the pressing need for such a thing, I also wanted to play aroun
 
 The problem is actually trickier than it looks, because when you type:
 
-  $ temper -28
+	$ temper -28
 
 on the command line, UNIX-like systems assume that you must be trying to pass the `temper` program some kind of weird option (maybe the `-2` and `-8` options smashed together?).  Getting around that without exotic dependencies requires . . . hacking a solution.
 
