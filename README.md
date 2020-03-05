@@ -66,7 +66,7 @@ From the `temper` directory, type:
 
 You might need to be root for that last part.  
 
-### So let me get this straight.  You wrote over a hundred lines of code in C to do something this stupid?
+### So let me get this straight.  You wrote nearly a hundred lines of code in C to do something this stupid?
 
 Yes.  Aside from the pressing need for such a thing, I also wanted to play around with [meson](https://mesonbuild.com/) and [ninja](https://ninja-build.org/).  At the time, I was thinking of using those on larger projects, and wanted to get my head around them on a tiny project first.  They're both awesome, by the way.
 
