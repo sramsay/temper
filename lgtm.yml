@@ -1,8 +1,5 @@
 extraction:
-  cpp:
-     prepare:
-        packages: 
-          - libboost-all-dev
+  c:
      configure:
         command:
         - meson build

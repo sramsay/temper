@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps:eoan
+    steps:
+      - checkout
+      - run:
+          name: "Update"
+          command: sudo apt-get update
+      - run:
+          name: "Install meson"
+          command: sudo apt-get install meson ninja-build
+      - run: 
+          name: "Create build files"
+          command: |
+            meson build
+      - run:
+          name: "Compile"
+          command: |
+            ninja -C build -v

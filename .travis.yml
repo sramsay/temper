@@ -9,26 +9,16 @@ matrix:
   include:
     - os: linux
       compiler: gcc
-      env: COMPILER=g++
-      addons:
-        apt:
-          update: true
-          packages:
-            - libboost-all-dev
+      env: COMPILER=gcc
     - os: linux
       compiler: clang
-      env: COMPILER=clang++
-      addons:
-        apt:
-          update: true
-          packages:
-            - libboost-all-dev
+      env: COMPILER=clang
 
 install:
   - pip install meson ninja
 
 script:
-  - CXX=${COMPILER} meson build
+  - CC=${COMPILER} meson build
   - ninja -v -C build
-  - CXX=${COMPILER} meson build
+  - CC=${COMPILER} meson build
   - ninja -v -C build

@@ -1,2 +1,2 @@
-sources = files('temper.cpp')
-headers = files('conversions.hpp', 'license.hpp')
+sources = files('temper.c', 'conversions.c')
+headers = files('license.h', 'conversions.h')
