@@ -16,20 +16,25 @@ int main(int argc, char* argv[argc + 1]) {
   }
 
   regex_t regex;
-  int reti = 0;
+  int regex_return_flag = 0;
   double raw_temp = 0;
 
-  reti = regcomp(&regex, "^[0-9-]+$", REG_EXTENDED);
-  if (reti) {
+  regex_return_flag = regcomp(&regex, "^[0-9-]+$", REG_EXTENDED);
+  if (regex_return_flag) { // Non-zero values indicate failure
     fprintf(stderr, "Could not compile regex\n");
     exit(EXIT_FAILURE);
   }
 
-  reti = regexec(&regex, argv[argc - 1], 0, NULL, 0);
-  if (!reti) {
+  regex_return_flag = regexec(&regex, argv[argc - 1], 0, NULL, 0);
+  if (regex_return_flag != 0 ) { // 0 indicates successful match
     char* end = NULL;
-    raw_temp = strtod(argv[argc - 1], &end);  // TODO: check
-    argc--;
+    raw_temp = strtod(argv[argc - 1], &end);
+    if (*end) {
+      printf("Could not parse %s", argv[argc-1]);
+      exit(EXIT_FAILURE);
+    } else {
+      argc--;
+    }
   }
 
   regfree(&regex);
@@ -64,7 +69,7 @@ int main(int argc, char* argv[argc + 1]) {
     }
   }
 
-  if (reti == 0) {
+  if (regex_return_flag == 0) {
     double f = 0;
     double c = 0;
 
