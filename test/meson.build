@@ -1,4 +1,4 @@
-project('temper-test', 'cpp',
+project('temper-test', 'c',
 	version : '0.1.0',
 	license : 'GPL3',
 	meson_version : '0.53.1',
