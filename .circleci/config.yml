@@ -10,7 +10,7 @@ jobs:
           command: sudo apt-get update
       - run:
           name: "Install meson"
-          command: sudo apt-get install libboost-all-dev meson ninja-build
+          command: sudo apt-get install meson ninja-build
       - run: 
           name: "Create build files"
           command: |

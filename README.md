@@ -5,7 +5,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fafa33d720a84726838a83c60be1e183)](https://app.codacy.com/manual/sramsay/temper?utm_source=github.com&utm_medium=referral&utm_content=sramsay/temper&utm_campaign=Badge_Grade_Settings)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/alerts/)
 [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/sramsay/temper.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sramsay/temper/context:cpp)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/289/badge)](https://bestpractices.coreinfrastructure.org/projects/289)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/3715/badge)](https://bestpractices.coreinfrastructure.org/projects/3715)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/sramsay/temper.svg)](http://isitmaintained.com/project/sramsay/temper "Percentage of issues still open")
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -13,7 +13,7 @@
 
 # temper
 
-version 1.2.5
+version 0.1.0
 
 ## Frequently Unasked Questions
 
@@ -34,7 +34,7 @@ It will give you:
 
 You can also adjust the precision with the --precision switch, so that:
 
-	temper --precision=3 -320.4
+	$ temper --precision=3 -320.4
 
 gives you:
 
@@ -53,7 +53,7 @@ As an American, I am completely illiterate when it comes to the metric system.  
 
 ### What do I need to compile this program?
 
-You need a reasonably modern C++ compiler.  You also need to have `meson`, `ninja`, and `boost` installed (all three of which are almost certainly available through the package manager of whatever distribution you're using; the last one is probaby alfready installed).
+You need a C compiler (that understands at least C99).  You also need to have `meson` and `ninja` installed (both of which are almost certainly available through the package manager of whatever distribution you're using, and may already be installed).
 
 ### How do I compile this program?
 
@@ -66,13 +66,15 @@ From the `temper` directory, type:
 
 You might need to be root for that last part.  
 
-### So let me get this straight.  You wrote over a hundred lines of code in C++ &mdash; with friggin' Boost as a dependency &mdash; to do something this stupid?
+### So let me get this straight.  You wrote nearly a hundred lines of code in C to do something this stupid?
 
 Yes.  Aside from the pressing need for such a thing, I also wanted to play around with [meson](https://mesonbuild.com/) and [ninja](https://ninja-build.org/).  At the time, I was thinking of using those on larger projects, and wanted to get my head around them on a tiny project first.  They're both awesome, by the way.
 
-Every discussion of `boost` on the internet seems to begin with, "Well, if you're okay using boost . . ."  
+The problem is actually trickier than it looks, because when you type:
 
-I am.  When `temper` becomes a mission-critical piece of software on the International Space Station, I will rewrite the whole thing in ANSI C.  On earth, however, `boost` is everywhere, and it makes life easier most of the time.
+	$ temper -28
+
+on the command line, UNIX-like systems assume that you must be trying to pass the `temper` program some kind of weird option (maybe the `-2` and `-8` options smashed together?).  Getting around that without exotic dependencies requires . . . hacking a solution.
 
 Oh, and temper proved very useful when building [wwo](https://github.com/sramsay/wwo), which is a much more interesting and useful program.
 
@@ -106,4 +108,4 @@ Nah, I think the metric system is way more rational, and it's the system used by
 
 [Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
 
-Last Modified: Wed Feb 26 11:42:24 CST 2020
+Last Modified: Thu Mar 05 16:45:42 CST 2020
