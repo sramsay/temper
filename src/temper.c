@@ -1,5 +1,6 @@
 #include <getopt.h>
 #include <regex.h>
+#include <_regex.h>
 #include <stdio.h>
 #include <stdlib.h>
 
