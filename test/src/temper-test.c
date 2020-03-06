@@ -1,7 +1,17 @@
-#define CATCH_CONFIG_MAIN
-#include "../../src/conversions.hpp"
-#include "catch.hpp"
+#include "unity.h"
+#include "../../src/conversions.h"
 
+void test_fahrenheit_conversions(void) {
+  TEST_ASSERT_EQUALS(-459.67, ftemp(-273));
+}
+
+int main(void) {
+  UNITY_BEGIN();
+  RUN_TEST(test_fahrenheit_conversions);
+  return UNITY_END();
+}
+
+/*
 TEST_CASE("Fahrenheit conversions", "[fTemp]") {
   REQUIRE(fTemp(-273.15) == Approx(-459.67));  // Absolute zero
   REQUIRE(fTemp(-195.8) == -320.44);  // Boiling point of liquid nitrogen
@@ -30,3 +40,4 @@ TEST_CASE("Celcius conversions", "[cTemp]") {
           Approx(99.9838888889));  // Approximate boiling point of water at 1
                                    // atm (101.325 kPa)
 }
+*/

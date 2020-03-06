@@ -72,6 +72,8 @@ int main(int argc, char* argv[argc + 1]) {
     c = ctemp(raw_temp);
     print_output(raw_temp, f, c, precision);
   }
+
+  return EXIT_SUCCESS;
 }
 
 void print_output(double raw_temp, double f, double c, int precision) {

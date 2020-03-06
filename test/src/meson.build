@@ -1,2 +1,2 @@
-sources = files('temper-test.cpp')
-headers = files('catch.hpp', '../../src/conversions.hpp')
+sources = files('../../src/conversions.c', 'temper-test.c', 'unity.c')
+headers = files('../../src/conversions.h', 'unity.h', 'unity_internals.h')
