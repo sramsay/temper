@@ -7,7 +7,7 @@ void print_version();
 
 void print_version() {
   const char PROGRAM[] = "temper";
-  const char VERSION[] = "0.1.0";
+  const char VERSION[] = "0.1.1";
   const char DATES[] = "2020";
 
   printf("%s %s\n", PROGRAM, VERSION);
