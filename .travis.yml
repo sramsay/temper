@@ -11,3 +11,7 @@ matrix:
       compiler: gcc
     - os: linux
       compiler: clang
+
+script:
+  - bootstrap.sh
+  - ./configure && make
