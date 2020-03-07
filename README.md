@@ -55,8 +55,8 @@ As an American, I am completely illiterate when it comes to the metric system.  
 
 Go grab [the latest release](https://github.com/sramsay/temper/releases).  Then it's the usual thing.  Something like:
 
-  $ tar -xvzf temper-X.X.X..tar.gz
-  $ cd temper-X.X.X
+	$ tar -xvzf temper-X.X.X..tar.gz
+	$ cd temper-X.X.X
 	$ ./configure
 	$ make
 	$ sudo make install
