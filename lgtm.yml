@@ -2,7 +2,7 @@ extraction:
   c:
      configure:
         command:
-        - meson build
+        - ./configure
      index:
        build_command:
-         - ninja -C build
+         - make
