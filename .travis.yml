@@ -13,5 +13,5 @@ matrix:
       compiler: clang
 
 script:
-  - bootstrap.sh
+  - ./bootstrap.sh
   - ./configure && make
