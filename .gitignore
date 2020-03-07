@@ -70,3 +70,6 @@ src/temper
 *.gcno
 *.gcda
 
+# Local scripts
+debug
+release
