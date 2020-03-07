@@ -8,13 +8,5 @@ matrix:
   include:
     - os: linux
       compiler: gcc
-      env: COMPILER=gcc
     - os: linux
       compiler: clang
-      env: COMPILER=clang
-
-script:
-  - CC=${COMPILER} ./configure
-  - make
-  - CC=${COMPILER} ./configure
-  - make
