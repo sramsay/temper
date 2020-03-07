@@ -1,6 +1,6 @@
 
 AC_PREREQ([2.69])
-AC_INIT([temper], [0.1.1], [sramsay@protonmail.com])
+AC_INIT([temper], [1.0.0], [sramsay@protonmail.com])
 AC_CONFIG_FILES([Makefile
                  src/Makefile])
 AC_CONFIG_SRCDIR([src/temper.c])

@@ -13,7 +13,7 @@
 
 # temper
 
-version 0.1.1
+version 1.0.0
 
 ## Frequently Unasked Questions
 
@@ -53,19 +53,21 @@ As an American, I am completely illiterate when it comes to the metric system.  
 
 ### How do I compile this program?
 
-From the `temper` directory, type:
+Go grab [the latest release](https://github.com/sramsay/temper/releases).  Then it's the usual thing.  Something like:
 
+  $ tar -xvzf temper-X.X.X..tar.gz
+  $ cd temper-X.X.X
 	$ ./configure
 	$ make
-	$ make install
+	$ sudo make install
 
-You might need to be root for that last part.  
+If you're a developer, you can clone this repository, run `autoreconf -i`, etc.
 
 ### So let me get this straight.  You wrote nearly a hundred lines of code in C to do something this stupid?
 
 Yes.  I mostly use this project to play around with different build tools, linters, and continuous integration systems before I recklessly incorporate them into larger projects. 
 
-And the problem is actually trickier than it looks, because when you type:
+And this particular problem is actually trickier than it looks, because when you type:
 
 	$ temper -28
 
@@ -103,4 +105,4 @@ Nah, I think the metric system is way more rational, and it's the system used by
 
 [Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
 
-Last Modified: Sat Mar 07 08:22:21 CST 2020
+Last Modified: Sat Mar 07 10:00:16 CST 2020
