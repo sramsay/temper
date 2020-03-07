@@ -51,26 +51,21 @@ Yes.
 
 As an American, I am completely illiterate when it comes to the metric system.  It often happens, though, that I'm in a chatroom or something and one of my friends (who is living in some exotic locale like Ottawa) will say, "It's -4 degrees outside!"  Which sounds insanely cold to me.  But armed with `temper`, I can say, "Cry me a river.  That's not that cold."
 
-### What do I need to compile this program?
-
-You need a C compiler (that understands at least C99).  You also need to have `meson` and `ninja` installed (both of which are almost certainly available through the package manager of whatever distribution you're using, and may already be installed).
-
 ### How do I compile this program?
 
 From the `temper` directory, type:
 
-	$ meson build
-	$ cd build
-	$ ninja
-	$ ninja install
+	$ ./configure
+	$ make
+	$ make install
 
 You might need to be root for that last part.  
 
 ### So let me get this straight.  You wrote nearly a hundred lines of code in C to do something this stupid?
 
-Yes.  Aside from the pressing need for such a thing, I also wanted to play around with [meson](https://mesonbuild.com/) and [ninja](https://ninja-build.org/).  At the time, I was thinking of using those on larger projects, and wanted to get my head around them on a tiny project first.  They're both awesome, by the way.
+Yes.  I mostly use this project to play around with different build tools, linters, and continuous integration systems before I recklessly incorporate them into larger projects. 
 
-The problem is actually trickier than it looks, because when you type:
+And the problem is actually trickier than it looks, because when you type:
 
 	$ temper -28
 
@@ -108,4 +103,4 @@ Nah, I think the metric system is way more rational, and it's the system used by
 
 [Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
 
-Last Modified: Thu Mar 05 16:45:42 CST 2020
+Last Modified: Sat Mar 07 08:22:21 CST 2020
