@@ -3,7 +3,6 @@ group: travis_latest
 version: ~> 1.0
 
 os: linux
-language: python
 
 matrix:
   include:
@@ -14,11 +13,8 @@ matrix:
       compiler: clang
       env: COMPILER=clang
 
-install:
-  - pip install meson ninja
-
 script:
-  - CC=${COMPILER} meson build
-  - ninja -v -C build
-  - CC=${COMPILER} meson build
-  - ninja -v -C build
+  - CC=${COMPILER} ./configure
+  - make
+  - CC=${COMPILER} ./configure
+  - make
