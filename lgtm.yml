@@ -1,8 +1,0 @@
-extraction:
-  c:
-     configure:
-        command:
-        - ./configure
-     index:
-       build_command:
-         - make
