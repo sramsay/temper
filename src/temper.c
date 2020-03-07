@@ -20,17 +20,17 @@ int main(int argc, char* argv[argc + 1]) {
   double raw_temp = 0;
 
   regex_return_flag = regcomp(&regex, "^[0-9-]+$", REG_EXTENDED);
-  if (regex_return_flag) { // Non-zero values indicate failure
+  if (regex_return_flag) {  // Non-zero values indicate failure
     fprintf(stderr, "Could not compile regex\n");
     exit(EXIT_FAILURE);
   }
 
   regex_return_flag = regexec(&regex, argv[argc - 1], 0, NULL, 0);
-  if (regex_return_flag != 0 ) { // 0 indicates successful match
+  if (regex_return_flag == 0) {  // 0 indicates successful match
     char* end = NULL;
     raw_temp = strtod(argv[argc - 1], &end);
     if (*end) {
-      printf("Could not parse %s", argv[argc-1]);
+      printf("Could not parse %s", argv[argc - 1]);
       exit(EXIT_FAILURE);
     } else {
       argc--;
