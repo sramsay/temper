@@ -1,5 +1,5 @@
-#ifndef __CONVERSIONS_INCLUDE__
-#define __CONVERSIONS_INCLUDE__
+#ifndef CONVERSIONS_INCLUDE
+#define CONVERSIONS_INCLUDE
 
 double ftemp(double raw_temp);
 double ctemp(double raw_temp);
