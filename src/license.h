@@ -1,5 +1,5 @@
-#ifndef __INCLUDE_LICENSE__
-#define __INCLUDE_LICENSE__
+#ifndef INCLUDE_LICENSE
+#define INCLUDE_LICENSE
 
 #include <config.h>
 #include <stdio.h>

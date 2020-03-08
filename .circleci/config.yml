@@ -11,8 +11,12 @@ jobs:
       - run: 
           name: "Create build files"
           command: |
+            ./bootstrap.sh
+      - run:
+          name: "Configure"
+          command: |
             ./configure
       - run:
-          name: "Compile"
+          name: "Build"
           command: |
             make

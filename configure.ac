@@ -1,6 +1,6 @@
 
 AC_PREREQ([2.69])
-AC_INIT([temper], [0.1.1], [sramsay@protonmail.com])
+AC_INIT([temper], [1.0.1], [sramsay@protonmail.com])
 AC_CONFIG_FILES([Makefile
                  src/Makefile])
 AC_CONFIG_SRCDIR([src/temper.c])
@@ -12,9 +12,13 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_PROG_CC
 AC_PROG_CC_C99
 
-# Checks for library functions.
+# Checks for library headers
 AC_CHECK_HEADER([regex.h])
 AC_CHECK_HEADER([getopt.h])
+
+# Checks for library functions
+AC_CHECK_FUNCS([regcomp])
+AC_FUNC_STRTOD
 
 AM_INIT_AUTOMAKE([-Wall foreign])
 

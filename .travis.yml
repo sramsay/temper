@@ -3,18 +3,15 @@ group: travis_latest
 version: ~> 1.0
 
 os: linux
+language: c
 
 matrix:
   include:
     - os: linux
       compiler: gcc
-      env: COMPILER=gcc
     - os: linux
       compiler: clang
-      env: COMPILER=clang
 
 script:
-  - CC=${COMPILER} ./configure
-  - make
-  - CC=${COMPILER} ./configure
-  - make
+  - ./bootstrap.sh
+  - ./configure && make
