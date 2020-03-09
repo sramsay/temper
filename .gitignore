@@ -75,3 +75,6 @@ src/temper
 # Local scripts
 debug
 release
+
+compile_commands.json
+coverity_model.c
