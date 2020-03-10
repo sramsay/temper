@@ -3,6 +3,7 @@
 #include <float.h>
 #include <stdlib.h>
 #include <check.h>
+#include <stdio.h>
 #include "../src/conversions.h"
 
 

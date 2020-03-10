@@ -1,6 +1,6 @@
 
 AC_PREREQ([2.69])
-AC_INIT([temper], [1.0.1], [sramsay@protonmail.com])
+AC_INIT([temper], [1.0.1], [https://github.com/sramsay/temper/issues])
 AC_CONFIG_SRCDIR([src/temper.c])
 AC_DEFINE([COPYRIGHT_DATES], ["2020"], [current copyright dates])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -21,7 +21,7 @@ AC_CHECK_HEADER([getopt.h])
 AC_CHECK_FUNCS([regcomp])
 AC_FUNC_STRTOD
 
-AM_INIT_AUTOMAKE([-Wall foreign])
+AM_INIT_AUTOMAKE([-Wall subdir-objects foreign])
 
 # Output files
 AC_CONFIG_HEADERS([config.h])
