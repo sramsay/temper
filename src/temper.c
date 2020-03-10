@@ -6,7 +6,7 @@
 #include "conversions.h"
 #include "license.h"
 
-void print_output(double raw_temp, double f, double c, int precision);
+void print_output(double raw_temp, double f, double c, unsigned precision);
 void print_usage(void);
 
 int main(int argc, char* argv[argc + 1]) {
@@ -16,7 +16,7 @@ int main(int argc, char* argv[argc + 1]) {
   }
 
   regex_t regex = { 0 };
-  int regex_return_flag = 0;
+  signed regex_return_flag = 0;
   double raw_temp = 0;
 
   regex_return_flag = regcomp(&regex, "^[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
@@ -45,9 +45,9 @@ int main(int argc, char* argv[argc + 1]) {
       {"precision", required_argument, (void *)0, 'p'},
       {0, 0, 0, 0}};
 
-  int opt = 0;
-  int option_index = 0;
-  int precision = 1;
+  signed opt = 0;
+  signed option_index = 0;
+  unsigned precision = 1;
 
   while ((opt = getopt_long_only(argc, argv, "hVp:", &long_options[0],
                                  &option_index)) != -1) {
@@ -81,7 +81,7 @@ int main(int argc, char* argv[argc + 1]) {
   return EXIT_SUCCESS;
 }
 
-void print_output(double raw_temp, double f, double c, int precision) {
+void print_output(double raw_temp, double f, double c, unsigned precision) {
   printf("%.*f\u00B0F is %.*f\u00B0C\n", precision, raw_temp, precision, c);
   printf("%.*f\u00B0C is %.*f\u00B0F\n", precision, raw_temp, precision, f);
 }
