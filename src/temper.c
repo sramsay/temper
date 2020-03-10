@@ -15,7 +15,7 @@ int main(int argc, char* argv[argc + 1]) {
     exit(EXIT_SUCCESS);
   }
 
-  regex_t regex;
+  regex_t regex = { 0 };
   int regex_return_flag = 0;
   double raw_temp = 0;
 
@@ -25,9 +25,9 @@ int main(int argc, char* argv[argc + 1]) {
     exit(EXIT_FAILURE);
   }
 
-  regex_return_flag = regexec(&regex, argv[argc - 1], 0, NULL, 0);
-  if (regex_return_flag == 0) {  // 0 indicates successful match
-    char* end = NULL;
+  regex_return_flag = regexec(&regex, argv[argc - 1], 0, (void*)0, 0);
+  if (!regex_return_flag) {  // 0 indicates successful match
+    char* end = (void*)0;
     raw_temp = strtod(argv[argc - 1], &end);
     if (*end) {
       printf("Could not parse %s", argv[argc - 1]);
@@ -40,9 +40,9 @@ int main(int argc, char* argv[argc + 1]) {
   regfree(&regex);
 
   static struct option long_options[] = {
-      {"help", no_argument, NULL, 'h'},
-      {"version", no_argument, NULL, 'V'},
-      {"precision", required_argument, 0, 'p'},
+      {"help", no_argument, (void *)0, 'h'},
+      {"version", no_argument, (void *)0, 'V'},
+      {"precision", required_argument, (void *)0, 'p'},
       {0, 0, 0, 0}};
 
   int opt = 0;
