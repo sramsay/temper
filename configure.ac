@@ -9,9 +9,6 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_PROG_CC
 AC_PROG_CC_C99
 
-# Checks for libraries
-PKG_CHECK_MODULES([CHECK], [check])
-
 # Checks for library headers
 AC_CHECK_HEADER([check.h])
 AC_CHECK_HEADER([regex.h])
@@ -26,7 +23,6 @@ AM_INIT_AUTOMAKE([-Wall subdir-objects foreign])
 # Output files
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile
-                 src/Makefile
-                 tests/Makefile])
+                 src/Makefile])
 
 AC_OUTPUT

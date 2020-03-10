@@ -1,7 +1,7 @@
 # Process this file with autoconf to produce a configure script.
 
 # Prelude.
-AC_PREREQ([2.59])
+AC_PREREQ([2.69])
 AC_INIT([temper_test], [0.1.0], [https://github.com/sramsay/temper/issues])
 AM_PROG_AR
 AC_CONFIG_MACRO_DIRS([m4])
@@ -15,9 +15,10 @@ AM_INIT_AUTOMAKE([-Wall -Werror subdir-objects foreign])
 # Checks for programs.
 AC_PROG_CC
 AC_PROG_LIBTOOL
+AC_PROG_CXX
+LT_INIT
 
 # Checks for libraries.
-
 PKG_CHECK_MODULES([CHECK], [check])
 AM_PROG_CC_C_O
 
