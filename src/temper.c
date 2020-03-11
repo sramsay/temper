@@ -61,8 +61,15 @@ int main(int argc, char* argv[argc + 1]) {
         print_usage();
         exit(EXIT_SUCCESS);
       case 'p':
-        precision = atoi(optarg);
-        break;
+        {
+          char* end = (void *)0;
+          precision = strtol(optarg, &end, 10);
+          if (*end) {
+            printf("Could not parse %s", optarg);
+            exit(EXIT_FAILURE);
+          }
+          break;
+        }
       default:
         print_usage();
         exit(EXIT_SUCCESS);
