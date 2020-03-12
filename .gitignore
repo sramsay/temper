@@ -73,8 +73,7 @@ src/temper
 *.gcda
 
 # Local scripts
-debug
-release
+build
 
 compile_commands.json
 coverity_model.c
