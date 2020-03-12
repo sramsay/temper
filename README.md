@@ -1,4 +1,5 @@
 [![GitHub version](https://badge.fury.io/gh/sramsay%2Ftemper.svg)](https://badge.fury.io/gh/sramsay%2Ftemper)
+![C/C++ CI](https://github.com/sramsay/temper/workflows/C/C++%20CI/badge.svg)
 [![Build Status](https://travis-ci.org/sramsay/temper.svg?branch=master)](https://travis-ci.org/sramsay/temper)
 [![Build Status](https://circleci.com/gh/sramsay/temper.svg?style=svg)](https://app.circleci.com/github/sramsay/temper/pipelines?branch=master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/20428/badge.svg)](https://scan.coverity.com/projects/sramsay-temper)
@@ -63,7 +64,7 @@ Go grab [the latest release](https://github.com/sramsay/temper/releases).  Then 
 
 If you're a developer, you can clone this repository, run `autoreconf -i`, etc.
 
-### So let me get this straight.  You wrote nearly a hundred lines of code in C to do something this stupid?
+### So let me get this straight.  You wrote over a hundred lines of code in C to do something this stupid?
 
 Yes.  I mostly use this project to play around with different build tools, linters, and continuous integration systems before I recklessly incorporate them into larger projects. 
 
