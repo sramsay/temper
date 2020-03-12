@@ -13,7 +13,7 @@
 
 # temper
 
-version 1.0.2
+version 1.0.3
 
 ## Frequently Unasked Questions
 
