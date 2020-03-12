@@ -7,8 +7,8 @@
 #include "conversions.h"
 #include "license.h"
 
-void print_output(double raw_temp, double f, double c, unsigned precision);
-void print_usage(void);
+static void print_output(double raw_temp, double f, double c, unsigned precision);
+static void print_usage(void);
 
 int main(int argc, char* argv[argc + 1]) {
   if (argc == 1) {
@@ -105,12 +105,12 @@ int main(int argc, char* argv[argc + 1]) {
   return EXIT_SUCCESS;
 }
 
-void print_output(double raw_temp, double f, double c, unsigned precision) {
+static void print_output(double raw_temp, double f, double c, unsigned precision) {
   printf("%.*f\u00B0F is %.*f\u00B0C\n", precision, raw_temp, precision, c);
   printf("%.*f\u00B0C is %.*f\u00B0F\n", precision, raw_temp, precision, f);
 }
 
-void print_usage(void) {
+static void print_usage(void) {
   puts("Usage: temper [num]");
   puts("  --help       Print this message");
   puts("  --version    Print the version number");
