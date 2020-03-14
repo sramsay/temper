@@ -13,7 +13,7 @@ static void print_usage(void);
 int main(int argc, char* argv[argc + 1]) {
   if (argc == 1) {
     print_usage();
-    exit(EXIT_SUCCESS);
+    return EXIT_SUCCESS;
   }
 
   /* The fundamental problem is that when getopt sees something like -42, it
@@ -30,8 +30,8 @@ int main(int argc, char* argv[argc + 1]) {
 
   regex_return_flag = regcomp(&regex, "^[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
   if (regex_return_flag) {  // Non-zero values indicate failure
-    fprintf(stderr, "Could not compile regex\n");
-    exit(EXIT_FAILURE);
+    perror("Could not compile regex.");
+    return EXIT_FAILURE;
   }
 
   for (int i = 0; i < argc; ++i) {
@@ -46,8 +46,12 @@ int main(int argc, char* argv[argc + 1]) {
         char* end = (void*)0;
         raw_temp = strtod(argv[i], &end);
         if (*end) {
-          printf("Could not parse %s", argv[i]);
-          exit(EXIT_FAILURE);
+          unsigned buffer_size = strlen(argv[i]);
+          char *error_buffer = (char *) malloc(buffer_size);
+          snprintf(error_buffer, buffer_size, "Could not parse %s", argv[i]); 
+          perror(error_buffer);
+          free(error_buffer);
+          return EXIT_FAILURE;
         }
       }
     } else {
@@ -74,22 +78,22 @@ int main(int argc, char* argv[argc + 1]) {
         break;
       case 'V':
         print_version();
-        exit(EXIT_SUCCESS);
+        return EXIT_SUCCESS;
       case 'h':
         print_usage();
-        exit(EXIT_SUCCESS);
+        return EXIT_SUCCESS;
       case 'p': {
         char* end = (void*)0;
         precision = strtol(optarg, &end, 10);
         if (*end) {
           printf("Could not parse %s", optarg);
-          exit(EXIT_FAILURE);
+          return EXIT_FAILURE;
         }
         break;
       }
       default:
         print_usage();
-        exit(EXIT_SUCCESS);
+        return EXIT_SUCCESS;
     }
   }
 
