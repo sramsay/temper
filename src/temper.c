@@ -46,11 +46,7 @@ int main(int argc, char* argv[argc + 1]) {
         char* end = (void*)0;
         raw_temp = strtod(argv[i], &end);
         if (*end) {
-          unsigned buffer_size = strlen(argv[i]);
-          char *error_buffer = (char *) malloc(buffer_size);
-          snprintf(error_buffer, buffer_size, "Could not parse %s", argv[i]); 
-          perror(error_buffer);
-          free(error_buffer);
+          perror("Could not parse input.");
           return EXIT_FAILURE;
         }
       }
