@@ -7,6 +7,7 @@
 #include "conversions.h"
 #include "license.h"
 
+
 static void print_output(double raw_temp, double f, double c, unsigned precision);
 static void print_usage(void);
 
