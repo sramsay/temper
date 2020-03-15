@@ -14,8 +14,6 @@
 
 # temper
 
-version 1.0.3
-
 ## Frequently Unasked Questions
 
 ### Is this the program I'm looking for?
