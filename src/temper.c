@@ -70,8 +70,13 @@ int main(int argc, char* argv[]) {
   int option_index = 0;
   unsigned precision = 1;
 
-  while ((opt = getopt_long_only(argc, args, "hVp:", &long_options[0],
-                                 &option_index)) != -1) {
+  for (;;) {
+    opt = getopt_long_only(argc, args, "hVp:", &long_options[0], &option_index);
+
+    if (opt == -1) {
+      break;
+    }
+    
     switch (opt) {
       case '?':
         break;
