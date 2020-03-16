@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file. This projec
 
 -   Initial release of C version
 
-## [v1.0.1](https://github.com/sramsay/json/releases/tag/v1.0.1)
+## [v1.0.3](https://github.com/sramsay/json/releases/tag/v1.0.3)
 
--   Fixed a bug that prevented temper from taking decimal input values
+-   This release uses a more fault-tolerant method for parsing negative input values.
+
+## [v1.0.4](https://github.com/sramsay/json/releases/tag/v1.0.4)
+
+-   Fixed a rather devastating off-by-one error that (mysteriously) only occurs on some platforms.  It was scary.
