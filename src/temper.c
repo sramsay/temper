@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
   signed regex_return_flag = 0;
   double raw_temp = 0;
 
-  regex_return_flag = regcomp(&regex, "^[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
+  regex_return_flag = regcomp(&regex, "^-?[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
   if (regex_return_flag) {  // Non-zero values indicate failure
     perror("Could not compile regex.");
 		regfree(&regex);
