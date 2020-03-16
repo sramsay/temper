@@ -47,7 +47,6 @@ int main(int argc, char* argv[]) {
       } else {
         char* end = (void*)0;
         raw_temp = strtod(argv[i], &end);
-        argc--;
         if (*end) {
           perror("Could not parse input.");
 					regfree(&regex);
@@ -58,6 +57,10 @@ int main(int argc, char* argv[]) {
       args[i] = argv[i];
     }
   }
+
+	if (raw_temp) {
+		argc--;
+	}
 
   regfree(&regex);
 
