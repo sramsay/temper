@@ -32,6 +32,7 @@ int main(int argc, char* argv[]) {
   regex_return_flag = regcomp(&regex, "^[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
   if (regex_return_flag) {  // Non-zero values indicate failure
     perror("Could not compile regex.");
+		regfree(&regex);
     return EXIT_FAILURE;
   }
 
@@ -48,6 +49,7 @@ int main(int argc, char* argv[]) {
         raw_temp = strtod(argv[i], &end);
         if (*end) {
           perror("Could not parse input.");
+					regfree(&regex);
           return EXIT_FAILURE;
         }
       }
