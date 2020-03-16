@@ -1,8 +1,8 @@
 #include "conversions.h"
 
-static const double C1 = 32.0;
-static const double C2 = 5.0;
-static const double C3 = 9.0;
+#define C1 32.0
+#define C2 5.0
+#define C3 9.0
 
 double ftemp(double raw_temp) {
   double f_temp = raw_temp * C3 / C2 + C1;

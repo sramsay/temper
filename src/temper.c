@@ -7,11 +7,11 @@
 #include "conversions.h"
 #include "license.h"
 
-
-static void print_output(double raw_temp, double f, double c, unsigned precision);
+static void print_output(double raw_temp, double f, double c,
+                         unsigned precision);
 static void print_usage(void);
 
-int main(int argc, char* argv[argc + 1]) {
+int main(int argc, char* argv[]) {
   if (argc == 1) {
     print_usage();
     return EXIT_SUCCESS;
@@ -106,7 +106,8 @@ int main(int argc, char* argv[argc + 1]) {
   return EXIT_SUCCESS;
 }
 
-static void print_output(double raw_temp, double f, double c, unsigned precision) {
+static void print_output(double raw_temp, double f, double c,
+                         unsigned precision) {
   printf("%.*f\u00B0F is %.*f\u00B0C\n", precision, raw_temp, precision, c);
   printf("%.*f\u00B0C is %.*f\u00B0F\n", precision, raw_temp, precision, f);
 }
