@@ -66,8 +66,8 @@ int main(int argc, char* argv[]) {
       {"precision", required_argument, (void*)0, 'p'},
       {0, 0, 0, 0}};
 
-  signed opt = 0;
-  signed option_index = 0;
+  int opt = 0;
+  int option_index = 0;
   unsigned precision = 1;
 
   while ((opt = getopt_long_only(argc, args, "hVp:", &long_options[0],
