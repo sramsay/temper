@@ -5,7 +5,7 @@ AC_CONFIG_SRCDIR([src/temper.c])
 AC_DEFINE([COPYRIGHT_DATES], ["2020"], [current copyright dates])
 AC_CONFIG_AUX_DIR([build-aux])
 
-# Checkss for programs
+# Checks for programs
 AC_PROG_CC
 AC_PROG_CC_C99
 
