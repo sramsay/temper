@@ -12,3 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 ## [v1.0.4](https://github.com/sramsay/json/releases/tag/v1.0.4)
 
 -   Fixed a rather devastating off-by-one error that (mysteriously) only occurs on some platforms.  It was scary.
+
+## [v1.0.5](https://github.com/sramsay/json/releases/tag/v1.0.5)
+
+-		Fixed a very silly autotools bug.

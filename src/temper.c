@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
           strcmp(argv[i - 1], "-p") == 0) {
         args[i] = argv[i];
       } else {
-        char* end = (void*)0;
+        char* end = { 0 };
         raw_temp = strtod(argv[i], &end);
         if (*end) {
           perror("Could not parse input.");
@@ -70,12 +70,11 @@ int main(int argc, char* argv[]) {
       {"precision", required_argument, (void*)0, 'p'},
       {0, 0, 0, 0}};
 
-  int opt = 0;
   int option_index = 0;
   unsigned precision = 1;
 
   for (;;) {
-    opt = getopt_long_only(argc, args, "hVp:", &long_options[0], &option_index);
+    int opt = getopt_long_only(argc, args, "hVp:", &long_options[0], &option_index);
 
     if (opt == -1) {
       break;
@@ -126,5 +125,5 @@ static void print_output(double raw_temp, double f, double c,
 static void print_usage(void) {
   puts("Usage: temper [num]");
   puts("  --help       Print this message");
-  puts("  --version    Print the version number");
+  puts("  --version    Print version number and license info");
 }
