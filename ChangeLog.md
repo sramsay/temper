@@ -15,4 +15,4 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [v1.0.5](https://github.com/sramsay/json/releases/tag/v1.0.5)
 
--		Fixed a very silly autotools bug.
+-   Fixed a very silly autotools bug.
