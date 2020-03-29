@@ -16,6 +16,7 @@ AC_CHECK_HEADER([getopt.h])
 
 # Checks for library functions
 AC_CHECK_FUNCS([regcomp])
+AC_CHECK_FUNCS([strtol])
 AC_FUNC_STRTOD
 
 AM_INIT_AUTOMAKE([-Wall subdir-objects foreign])
