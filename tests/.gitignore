@@ -76,3 +76,4 @@ release
 
 compile_commands.json
 coverity_model.c
+check_conversion.trs
