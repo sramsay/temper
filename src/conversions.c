@@ -1,5 +1,7 @@
 #include "conversions.h"
 
+#include <config.h>
+
 #define C1 32.0
 #define C2 5.0
 #define C3 9.0

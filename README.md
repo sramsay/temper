@@ -72,7 +72,7 @@ And this particular problem is actually trickier than it looks, because when you
 
 on the command line, UNIX-like systems assume that you must be trying to pass the `temper` program some kind of weird option (maybe the `-2` and `-8` options smashed together?).  Getting around that without exotic dependencies requires . . . hacking a solution.
 
-Oh, and temper proved very useful when building [wwo](https://github.com/sramsay/wwo), which is a much more interesting and useful program.
+Oh, and temper proved very useful when building [nowa](https://github.com/sramsay/nowa), which is a much more interesting and useful program.
 
 ### Couldn't you have written this in, like, one line of Ruby/Python/JavaScript with no dependencies?
 
@@ -104,4 +104,4 @@ Nah, I think the metric system is way more rational, and it's the system used by
 
 [Commits by Stephen Ramsay](https://github/sramsay/temper/commits) and [releases](https://github/sramsay/temper/releases) are signed with this [PGP Key](https://keybase.io/sramsay/pgp_keys.asc?fingerprint=ca1423bdcd55d15f35acc07a61fbe427138e5b2b).
 
-Last Modified: Sun Mar 15 05:40:56 CDT 2020
+Last Modified: Tue Dec 01 11:51:43 CST 2020

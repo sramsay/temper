@@ -1,3 +1,4 @@
+#include <config.h>
 #include <getopt.h>
 #include <regex.h>
 #include <stdio.h>
@@ -32,7 +33,7 @@ int main(int argc, char* argv[]) {
   regex_return_flag = regcomp(&regex, "^-?[0-9-]+[.]?[0-9]*$", REG_EXTENDED);
   if (regex_return_flag) {  // Non-zero values indicate failure
     perror("Could not compile regex.");
-		regfree(&regex);
+    regfree(&regex);
     return EXIT_FAILURE;
   }
 
@@ -45,11 +46,11 @@ int main(int argc, char* argv[]) {
           strcmp(argv[i - 1], "-p") == 0) {
         args[i] = argv[i];
       } else {
-        char* end = { 0 };
+        char* end = {0};
         raw_temp = strtod(argv[i], &end);
         if (*end) {
           perror("Could not parse input.");
-					regfree(&regex);
+          regfree(&regex);
           return EXIT_FAILURE;
         }
       }
@@ -58,9 +59,9 @@ int main(int argc, char* argv[]) {
     }
   }
 
-	if (raw_temp) {
-		argc--;
-	}
+  if (raw_temp) {
+    argc--;
+  }
 
   regfree(&regex);
 
@@ -74,12 +75,13 @@ int main(int argc, char* argv[]) {
   unsigned precision = 1;
 
   for (;;) {
-    int opt = getopt_long_only(argc, args, "hVp:", &long_options[0], &option_index);
+    int opt =
+        getopt_long_only(argc, args, "hVp:", &long_options[0], &option_index);
 
     if (opt == -1) {
       break;
     }
-    
+
     switch (opt) {
       case '?':
         break;
