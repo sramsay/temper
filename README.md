@@ -1,4 +1,4 @@
-[![GitHub version](https://badge.fury.io/gh/sramsay%2Ftemper.svg)](https://badge.fury.io/gh/sramsay%2Ftemper)
+[![Release version](https://img.shields.io/github/v/release/:user/:repo?sort=semver)](https://img.shields.io/github/v/release/:user/:repo?sort=semver)
 ![C/C++ CI](https://github.com/sramsay/temper/workflows/C/C++%20CI/badge.svg)
 [![Build Status](https://travis-ci.org/sramsay/temper.svg?branch=master)](https://travis-ci.org/sramsay/temper)
 [![Build Status](https://circleci.com/gh/sramsay/temper.svg?style=svg)](https://app.circleci.com/github/sramsay/temper/pipelines?branch=master)
