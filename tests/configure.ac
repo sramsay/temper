@@ -2,7 +2,7 @@
 
 # Prelude.
 AC_PREREQ([2.69])
-AC_INIT([temper_test], [0.1.0], [https://github.com/sramsay/temper/issues])
+AC_INIT([check_conversions], [0.1.0], [https://github.com/sramsay/temper/issues])
 AM_PROG_AR
 AC_CONFIG_MACRO_DIRS([m4])
 

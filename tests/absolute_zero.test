@@ -1,6 +1,0 @@
-# Absolute Zero
-$ temper --precision 2 -273.15
->
--273.15°F is -169.53°C
--273.15°C is -459.67°F
->= 0
