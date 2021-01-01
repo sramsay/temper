@@ -1,7 +1,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT([temper], [1.0.6], [https://github.com/sramsay/temper/issues])
-AC_DEFINE([COPYRIGHT_DATES], ["2020"], [current copyright dates])
+AC_DEFINE([COPYRIGHT_DATES], ["2020-2021"], [current copyright dates])
 AC_CONFIG_SRCDIR([src/temper.c])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_HEADERS([config.h])
